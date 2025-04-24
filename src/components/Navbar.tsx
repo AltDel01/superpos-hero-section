@@ -1,10 +1,7 @@
-
-import { Button } from "@/components/ui/button"
-import { ChevronDown } from "lucide-react"
-
+import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 const Navbar = () => {
-  return (
-    <nav className="py-2 px-6 flex items-center justify-between w-full">
+  return <nav className="px-6 flex items-center justify-between w-full py-[0px] my-[-20px]">
       <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-40 object-contain" />
       <div className="flex-1 flex justify-center">
         <div className="flex gap-8">
@@ -24,8 +21,6 @@ const Navbar = () => {
       <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
         Login / Sign Up
       </Button>
-    </nav>
-  )
-}
-
-export default Navbar
+    </nav>;
+};
+export default Navbar;
