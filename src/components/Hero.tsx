@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button"
 import { Wheat } from "lucide-react"
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center px-4 mt-4 max-w-7xl mx-auto">
+    <div className="flex flex-col items-center px-4 mt-2 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center">
         <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6">
           The Best F&B Point-of-Sale System
@@ -34,8 +35,11 @@ const Hero = () => {
           <div className="absolute -left-6 text-primary">
             <Wheat className="h-5 w-5" />
           </div>
-          <span className="font-medium">Capterra</span>
-          <span className="text-amber-400">★</span>
+          <img 
+            src="/lovable-uploads/ddb2bd86-28ad-47d3-ad89-16bac0ee9368.png" 
+            alt="Capterra Logo" 
+            className="h-5 w-auto"
+          />
           <span className="font-medium">5.0/5</span>
           <div className="absolute -right-6 text-primary">
             <Wheat className="h-5 w-5" />
