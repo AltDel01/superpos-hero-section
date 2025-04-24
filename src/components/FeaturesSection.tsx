@@ -42,7 +42,9 @@ const FeaturesSection = () => {
                 key={feature.label}
                 value={feature.label}
                 className={`rounded-full px-6 py-2 text-sm ${
-                  feature.active ? 'bg-primary text-white' : 'bg-[#FFF3ED]'
+                  feature.active 
+                    ? 'bg-[#F97316] text-white' 
+                    : 'bg-[#FDE1D3] text-[#F97316]'
                 }`}
               >
                 {feature.label}
@@ -67,10 +69,10 @@ const FeaturesSection = () => {
               {orderingFeatures.map((feature) => (
                 <div
                   key={feature.label}
-                  className="inline-flex items-center bg-[#FFF3ED] rounded-full px-4 py-2 mr-2 mb-2"
+                  className="inline-flex items-center bg-[#FDE1D3] rounded-full px-4 py-2 mr-2 mb-2"
                 >
-                  <feature.icon className="w-4 h-4 mr-2 text-primary" />
-                  <span className="text-sm">{feature.label}</span>
+                  <feature.icon className="w-4 h-4 mr-2 text-[#F97316]" />
+                  <span className="text-sm text-[#F97316]">{feature.label}</span>
                 </div>
               ))}
             </div>
@@ -81,9 +83,9 @@ const FeaturesSection = () => {
           </div>
 
           {/* Right Column - Image */}
-          <div className="bg-[#FFF3ED] rounded-lg p-4">
+          <div className="bg-[#FDE1D3] rounded-lg p-4">
             <img
-              src="/lovable-uploads/6975dcee-f385-44ed-a50e-b14ba3b2aec4.png"
+              src="/lovable-uploads/c9cb59bc-4dcd-4d68-92ba-e98a951c9e25.png"
               alt="Features Dashboard"
               className="w-full h-auto rounded-lg"
             />
