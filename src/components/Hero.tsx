@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center px-4 mt-2 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center">
-        <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6">
+        <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6 font-bold">
           The Best F&B Point-of-Sale System
         </div>
         
@@ -35,7 +35,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/50aac8d4-df29-49cd-9715-c0c0ca8b41fe.png" 
             alt="Capterra Rating 5.0/5" 
-            className="h-16 w-auto" 
+            className="h-24 w-auto" 
           />
         </div>
 
