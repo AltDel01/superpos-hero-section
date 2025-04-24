@@ -43,14 +43,14 @@ const BrandsSection = () => {
           dragFree: true,
           skipSnaps: true,
         }} plugins={[Autoplay({
-          delay: 1000,
+          delay: 600,
           stopOnInteraction: false,
           stopOnMouseEnter: false,
           playOnInit: true
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
-                <div className="w-20 h-20 bg-white rounded-lg shadow-md p-2 flex items-center justify-center">
+                <div className="w-full h-24 bg-white rounded-lg shadow-md p-1 flex items-center justify-center">
                   <img 
                     src={brand.src} 
                     alt={brand.alt} 
