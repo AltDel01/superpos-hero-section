@@ -11,7 +11,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <ShoppingBasket className="w-8 h-8 text-orange-500" />,
       title: "Grocery Delivery",
-      imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
+      imageUrl: "/lovable-uploads/f93e5bd8-fa7e-475e-afa6-b0c6c67bddaf.png"
     },
     {
       icon: <Pizza className="w-8 h-8 text-orange-500" />,
