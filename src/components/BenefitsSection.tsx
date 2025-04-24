@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Hand, RefreshCw, Shield, Settings, Key, Headphones, DollarSign, CloudUpload, Smile } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -71,15 +70,12 @@ const BenefitsSection = () => {
   const DualColorIcon = ({ icon, accentColor }) => {
     return (
       <div className="relative w-12 h-12 flex items-center justify-center">
-        {/* Base icon (dark outline) */}
         <div className="absolute inset-0 flex items-center justify-center">
           {React.cloneElement(icon, {
             className: "w-10 h-10",
             stroke: "#0F172A"
           })}
         </div>
-        
-        {/* Accent parts (orange) */}
         <div className="absolute inset-0 flex items-center justify-center">
           {React.cloneElement(icon, {
             className: "w-6 h-6",
@@ -114,8 +110,8 @@ const BenefitsSection = () => {
                 <div className="mb-4">
                   <DualColorIcon icon={benefit.icon} accentColor={benefit.accentColor} />
                 </div>
-                <h3 className="font-bold text-lg mb-1">{benefit.title}</h3>
-                <p className="font-bold text-sm text-gray-600">{benefit.subtitle}</p>
+                <h3 className="font-normal text-lg mb-1">{benefit.title}</h3>
+                <p className="font-normal text-sm text-gray-600">{benefit.subtitle}</p>
               </CardContent>
             </Card>
           ))}
@@ -126,4 +122,3 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
-
