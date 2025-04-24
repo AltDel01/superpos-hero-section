@@ -1,11 +1,10 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const BrandsSection = () => {
@@ -26,9 +25,9 @@ const BrandsSection = () => {
     <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-primary mb-4">
+          <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6 font-bold inline-block">
             Brands That Trust Us
-          </h2>
+          </div>
           <div className="text-4xl font-bold mb-4">
             Trusted By Over Thousands Of F&B
             <br />
@@ -38,20 +37,23 @@ const BrandsSection = () => {
         
         <Carousel
           opts={{
-            align: "start",
+            align: "center",
             loop: true,
+            dragFree: true,
           }}
           plugins={[
             Autoplay({
               delay: 2000,
+              stopOnInteraction: false,
+              stopOnMouseEnter: false,
             }),
           ]}
           className="w-full"
         >
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/4 lg:basis-1/5">
-                <div className="w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center p-4">
+              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
+                <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center p-3">
                   <img
                     src={brand.src}
                     alt={brand.alt}
@@ -68,4 +70,3 @@ const BrandsSection = () => {
 };
 
 export default BrandsSection;
-
