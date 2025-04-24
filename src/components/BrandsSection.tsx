@@ -20,9 +20,6 @@ const BrandsSection = () => {
     src: "/lovable-uploads/ef2cb903-5490-4a24-a71c-75dcb9ffa2ce.png",
     alt: "Ayam Gepuk"
   }, {
-    src: "/lovable-uploads/fdafbee7-fe06-46ce-b983-31e705442164.png",
-    alt: "Nissin x Irvins"
-  }, {
     src: "/lovable-uploads/38da9ec1-535a-4754-8319-ab6c70469aa6.png",
     alt: "Wedrink"
   }];
@@ -46,10 +43,11 @@ const BrandsSection = () => {
           dragFree: true,
           skipSnaps: true,
         }} plugins={[Autoplay({
-          delay: 1500,
+          delay: 1000,
           stopOnInteraction: false,
           stopOnMouseEnter: false,
-          playOnInit: true
+          playOnInit: true,
+          rewind: false
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
