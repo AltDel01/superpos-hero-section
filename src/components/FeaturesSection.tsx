@@ -1,25 +1,21 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Globe, Smartphone, Code, QrCode, Share } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
-
 const FeaturesSection = () => {
   const [activeFeature, setActiveFeature] = useState("Ordering Suite");
-  
   const features = [{
-    label: 'Ordering Suite',
+    label: 'Ordering Suite'
   }, {
-    label: 'Delivery Suite',
+    label: 'Delivery Suite'
   }, {
-    label: 'Back-office Management',
+    label: 'Back-office Management'
   }, {
-    label: 'Marketing Automation',
+    label: 'Marketing Automation'
   }, {
-    label: 'Payment Solution',
+    label: 'Payment Solution'
   }];
-  
   const orderingFeatures = [{
     icon: Globe,
     label: 'Ordering Website'
@@ -36,11 +32,9 @@ const FeaturesSection = () => {
     icon: Share,
     label: 'Social Media Ordering'
   }];
-  
   const handleValueChange = (value: string) => {
     if (value) setActiveFeature(value);
   };
-  
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
@@ -55,33 +49,17 @@ const FeaturesSection = () => {
           </h2>
 
           {/* Features Toggle Group */}
-          <ToggleGroup 
-            type="single" 
-            className="justify-center gap-2 flex-wrap" 
-            defaultValue="Ordering Suite"
-            value={activeFeature}
-            onValueChange={handleValueChange}
-          >
-            {features.map(feature => (
-              <ToggleGroupItem 
-                key={feature.label} 
-                value={feature.label} 
-                className={`rounded-full px-6 py-2 text-sm ${
-                  activeFeature === feature.label 
-                    ? 'bg-[#F97316] text-white hover:bg-[#F97316]/90' 
-                    : 'bg-[#FDE1D3] text-[#F97316] hover:bg-[#FDE1D3]/90'
-                }`}
-              >
+          <ToggleGroup type="single" className="justify-center gap-2 flex-wrap" defaultValue="Ordering Suite" value={activeFeature} onValueChange={handleValueChange}>
+            {features.map(feature => <ToggleGroupItem key={feature.label} value={feature.label} className={`rounded-full px-6 py-2 text-sm ${activeFeature === feature.label ? 'bg-[#F97316] text-white hover:bg-[#F97316]/90' : 'bg-[#FDE1D3] text-[#F97316] hover:bg-[#FDE1D3]/90'}`}>
                 {feature.label}
-              </ToggleGroupItem>
-            ))}
+              </ToggleGroupItem>)}
           </ToggleGroup>
         </div>
 
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column */}
-          <Card className="p-8 border-0 shadow-lg py-[100px]">
+          <Card className="p-8 border-0 shadow-lg py-[110px]">
             <CardContent className="p-0 space-y-6">
               <h3 className="text-2xl font-bold py-[20px]">Accept & Manage Orders Online</h3>
               <p className="text-gray-600">
@@ -106,15 +84,10 @@ const FeaturesSection = () => {
 
           {/* Right Column - Image */}
           <div className="bg-[#FDE1D3] rounded-lg p-4 aspect-square">
-            <img 
-              src="/lovable-uploads/c9cb59bc-4dcd-4d68-92ba-e98a951c9e25.png" 
-              alt="Features Dashboard" 
-              className="w-full h-full object-cover rounded-lg" 
-            />
+            <img src="/lovable-uploads/c9cb59bc-4dcd-4d68-92ba-e98a951c9e25.png" alt="Features Dashboard" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
       </div>
     </section>;
 };
-
 export default FeaturesSection;
