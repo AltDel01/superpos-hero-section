@@ -87,10 +87,10 @@ const BrandsSection = () => {
           playOnInit: true,
           stopOnLastSnap: false
         })]} className="w-full">
-          <CarouselContent className="-ml-2 md:-ml-4">
+          <CarouselContent className="-ml-0 md:-ml-0">
             {brands.map((brand, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
-                <div className="aspect-square w-full bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
+              <CarouselItem key={index} className="pl-0 md:pl-0 md:basis-1/5 lg:basis-1/6">
+                <div className="aspect-square w-full bg-[#f4efe9] rounded-none p-4 flex items-center justify-center">
                   <img 
                     src={brand.src} 
                     alt={brand.alt} 
