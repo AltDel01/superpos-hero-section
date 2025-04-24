@@ -43,7 +43,7 @@ const WhomWeHelpSection = () => {
           <h2 className="text-4xl font-bold mb-4">Whom we help</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Whether you own a multinational restaurant chain or running a small pizzeria,{' '}
-            <span className="font-medium">SuperPOS</span> can turn your business online within minutes; no fuss or delay.
+            <span className="font-medium italic">SuperPOS</span> can turn your business online within minutes; no fuss or delay.
           </p>
         </div>
 
