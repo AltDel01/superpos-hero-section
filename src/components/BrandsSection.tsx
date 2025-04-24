@@ -46,8 +46,7 @@ const BrandsSection = () => {
           delay: 1000,
           stopOnInteraction: false,
           stopOnMouseEnter: false,
-          playOnInit: true,
-          rewind: false
+          playOnInit: true
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
