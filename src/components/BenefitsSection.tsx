@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Hand, RefreshCw, Shield, Settings, Key, Headphones, DollarSign, CloudUpload, Smile } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -110,8 +111,7 @@ const BenefitsSection = () => {
                 <div className="mb-4">
                   <DualColorIcon icon={benefit.icon} accentColor={benefit.accentColor} />
                 </div>
-                <h3 className="font-normal text-lg mb-1">{benefit.title}</h3>
-                <p className="font-normal text-sm text-gray-600">{benefit.subtitle}</p>
+                <div className="text-base text-gray-800">{benefit.title} {benefit.subtitle}</div>
               </CardContent>
             </Card>
           ))}
@@ -122,3 +122,4 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
+
