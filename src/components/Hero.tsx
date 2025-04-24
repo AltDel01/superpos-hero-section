@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="w-full max-w-5xl">
           <img
-            src="/lovable-uploads/d27683b4-38ce-4708-9363-6f6063216eba.png"
+            src="/lovable-uploads/0bf8d20d-3bfd-4d65-a701-e54f36213537.png"
             alt="SuperPOS Dashboard"
             className="w-full h-auto rounded-lg shadow-xl"
           />
