@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Rocket, Cloud, Link, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,7 +8,7 @@ const WhomWeHelpSection = () => {
       icon: Rocket,
       title: "F&B Outlet",
       description: "Starting your journey with the passion of cooking? Put your foot strong with our White-label F&B App Solution that offers a complete suite of advanced features to succeed.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/f240742f-5418-4601-8f42-813388944374.png"
     },
     {
       icon: Link,
