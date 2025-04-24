@@ -11,13 +11,15 @@ const BrandsSection = () => {
     alt: "SEC Bowl"
   }, {
     src: "/lovable-uploads/c8446695-18d3-4e4b-826f-c7aefac85289.png",
-    alt: "Roti'O"
+    alt: "Roti'O",
+    className: "scale-150"
   }, {
     src: "/lovable-uploads/1220abb3-3b80-4113-acef-5410eb6491b3.png",
     alt: "Wedrink"
   }, {
     src: "/lovable-uploads/18a50f87-cd81-4a12-86c2-e70bcb81d974.png",
-    alt: "Tomoro Coffee"
+    alt: "Tomoro Coffee",
+    className: "scale-150"
   }, {
     src: "/lovable-uploads/5c6f9ac7-2fa0-4535-be0c-381db38f3a42.png",
     alt: "SEC Bowl Lite"
@@ -83,15 +85,17 @@ const BrandsSection = () => {
           stopOnLastSnap: false
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
-            {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
+            {brands.map((brand, index) => (
+              <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
                 <div className="aspect-square w-full bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
                   <img 
                     src={brand.src} 
                     alt={brand.alt} 
-                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-500" 
+                    className={`w-full h-full object-contain hover:scale-110 transition-transform duration-500 ${brand.className || ''}`}
                   />
                 </div>
-              </CarouselItem>)}
+              </CarouselItem>
+            ))}
           </CarouselContent>
         </Carousel>
       </div>
