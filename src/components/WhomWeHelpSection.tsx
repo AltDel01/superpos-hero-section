@@ -20,7 +20,7 @@ const WhomWeHelpSection = () => {
       icon: Cloud,
       title: "Cloud Kitchens",
       description: "Want a platform for your dark kitchen to connect with your customers? Count on your readymade white-label restaurant delivery solution and flaunt your delicious meals online.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/933cb5f3-fe08-454f-84f9-26ab2cee512b.png"
     },
     {
       icon: Truck,
