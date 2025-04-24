@@ -1,11 +1,10 @@
-
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
 
 const Navbar = () => {
   return (
     <nav className="py-4 px-6 flex items-center justify-between w-full">
-      <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-12 object-contain" />
+      <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-16 object-contain" />
       <div className="flex-1 flex justify-center">
         <div className="flex gap-8">
           <a href="#" className="flex items-center text-gray-700 hover:text-primary">
