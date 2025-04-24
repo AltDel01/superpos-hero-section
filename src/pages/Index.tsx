@@ -4,7 +4,7 @@ import Hero from "@/components/Hero"
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-[#f4f4ef]">
+    <div className="min-h-screen bg-[#f4efe9]">
       <Navbar />
       <Hero />
     </div>

@@ -1,21 +1,23 @@
+
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
+
 const Navbar = () => {
   return <nav className="px-6 flex items-center justify-between w-full py-[0px] my-[-20px]">
       <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-40 object-contain" />
       <div className="flex-1 flex justify-center">
         <div className="flex gap-8">
-          <a href="#" className="flex items-center text-gray-700 hover:text-primary">
+          <a href="#" className="flex items-center text-gray-700 hover:text-primary font-bold">
             Product <ChevronDown className="ml-1 h-4 w-4" />
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-primary">
+          <a href="#" className="flex items-center text-gray-700 hover:text-primary font-bold">
             Solutions <ChevronDown className="ml-1 h-4 w-4" />
           </a>
-          <a href="#" className="flex items-center text-gray-700 hover:text-primary">
+          <a href="#" className="flex items-center text-gray-700 hover:text-primary font-bold">
             About <ChevronDown className="ml-1 h-4 w-4" />
           </a>
-          <a href="#" className="text-gray-700 hover:text-primary">Pricing</a>
-          <a href="#" className="text-gray-700 hover:text-primary">Customer Story</a>
+          <a href="#" className="text-gray-700 hover:text-primary font-bold">Pricing</a>
+          <a href="#" className="text-gray-700 hover:text-primary font-bold">Customer Story</a>
         </div>
       </div>
       <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">

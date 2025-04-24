@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button"
 import { Star, Wheat } from "lucide-react"
 
@@ -34,7 +35,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/50aac8d4-df29-49cd-9715-c0c0ca8b41fe.png" 
             alt="Capterra Rating 5.0/5" 
-            className="h-8 w-auto"
+            className="h-16 w-auto" 
           />
         </div>
 
