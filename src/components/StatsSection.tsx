@@ -4,7 +4,7 @@ import { Calendar, Flag, Store, Users } from 'lucide-react';
 
 const StatsSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
@@ -20,7 +20,7 @@ const StatsSection = () => {
           {/* Hero Image */}
           <div className="relative md:col-span-1">
             <img 
-              src="/lovable-uploads/07cb5147-2074-41a0-84a2-0cd4dfa1d415.png"
+              src="/lovable-uploads/60ff4feb-2c0f-4ab4-a338-62d3a569085b.png"
               alt="Happy user working on laptop" 
               className="w-full h-auto rounded-2xl"
             />
@@ -53,7 +53,7 @@ const StatsSection = () => {
             <div className="bg-white p-8 rounded-2xl shadow-sm border">
               <Users className="w-8 h-8 mb-4 text-gray-600" />
               <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">1 Billion +</h3>
-              <p className="text-gray-600">Revenue made with this solution and growing.</p>
+              <p className="text-gray-600">Revenue made with this solution and growing</p>
             </div>
           </div>
         </div>
