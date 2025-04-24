@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
@@ -22,9 +23,6 @@ const BrandsSection = () => {
     src: "/lovable-uploads/fdafbee7-fe06-46ce-b983-31e705442164.png",
     alt: "Nissin x Irvins"
   }, {
-    src: "/lovable-uploads/aa7e7321-7365-4f48-9042-0340bd93f69a.png",
-    alt: "Roti'O"
-  }, {
     src: "/lovable-uploads/38da9ec1-535a-4754-8319-ab6c70469aa6.png",
     alt: "Wedrink"
   }];
@@ -43,18 +41,24 @@ const BrandsSection = () => {
         </div>
         
         <Carousel opts={{
-        align: "center",
-        loop: true,
-        dragFree: true
-      }} plugins={[Autoplay({
-        delay: 2000,
-        stopOnInteraction: false,
-        stopOnMouseEnter: false
-      })]} className="w-full">
+          align: "center",
+          loop: true,
+          dragFree: true,
+          skipSnaps: true,
+        }} plugins={[Autoplay({
+          delay: 1500,
+          stopOnInteraction: false,
+          stopOnMouseEnter: false,
+          playOnInit: true
+        })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
-                <div className="w-24 h-24 bg-white rounded-lg shadow-md flex items-center justify-center p-3">
-                  <img src={brand.src} alt={brand.alt} className="max-w-full max-h-full object-contain hover:scale-110 transition-transform duration-300" />
+                <div className="w-20 h-20 bg-white rounded-lg shadow-md p-2 flex items-center justify-center">
+                  <img 
+                    src={brand.src} 
+                    alt={brand.alt} 
+                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300" 
+                  />
                 </div>
               </CarouselItem>)}
           </CarouselContent>
