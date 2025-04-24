@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
@@ -75,18 +76,18 @@ const BrandsSection = () => {
           dragFree: true,
           skipSnaps: true,
         }} plugins={[Autoplay({
-          delay: 600,
+          delay: 2000, // Increased delay for slower animation
           stopOnInteraction: false,
           stopOnMouseEnter: false,
           playOnInit: true
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
-                <div className="w-full h-16 bg-white rounded-lg shadow-md p-2 flex items-center justify-center">
+                <div className="aspect-square w-full bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
                   <img 
                     src={brand.src} 
                     alt={brand.alt} 
-                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-300" 
+                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-500" 
                   />
                 </div>
               </CarouselItem>)}
