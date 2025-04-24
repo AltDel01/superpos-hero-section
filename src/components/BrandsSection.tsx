@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
@@ -74,12 +73,14 @@ const BrandsSection = () => {
           align: "center",
           loop: true,
           dragFree: true,
-          skipSnaps: true,
+          skipSnaps: false,
+          containScroll: "trimSnaps"
         }} plugins={[Autoplay({
-          delay: 2000, // Increased delay for slower animation
+          delay: 2000,
           stopOnInteraction: false,
           stopOnMouseEnter: false,
-          playOnInit: true
+          playOnInit: true,
+          stopOnLastSnap: false
         })]} className="w-full">
           <CarouselContent className="-ml-2 md:-ml-4">
             {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
