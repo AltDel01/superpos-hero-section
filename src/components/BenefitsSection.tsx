@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Hand, RefreshCw, Shield, Settings, Key, Headphones, DollarSign, CloudUpload, Smile } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -79,8 +80,8 @@ const BenefitsSection = () => {
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <Badge className="bg-[#FF6634] text-white hover:bg-[#FF6634]/90 px-6 py-2 rounded-full mb-6 font-normal">
-            <span className="font-bold italic">SuperPOS</span> helps
+          <Badge className="bg-[#ffdfd3] text-[#FF6634] hover:bg-[#ffdfd3]/90 px-6 py-2 rounded-full mb-6 font-normal">
+            The Best <span className="font-bold italic">F&B Point-of-Sale System</span>
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             How <span className="font-bold">SuperPOS</span> Enables
