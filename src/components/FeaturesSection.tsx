@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
@@ -87,9 +88,9 @@ const FeaturesSection = () => {
           {/* Right Column - Image */}
           <div className="bg-[#FDE1D3] rounded-lg p-4">
             <img
-              src="/lovable-uploads/c9cb59bc-4dcd-4d68-92ba-e98a951c9e25.png"
+              src="/lovable-uploads/3b1e88d4-47c2-4e28-848d-d7e2ebe7178c.png"
               alt="Features Dashboard"
-              className="w-full h-auto rounded-lg"
+              className="w-full h-full object-cover aspect-square rounded-lg"
             />
           </div>
         </div>
