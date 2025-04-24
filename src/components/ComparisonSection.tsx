@@ -89,22 +89,33 @@ const ComparisonSection = () => {
         </div>
 
         <div className="overflow-x-auto">
-          <Table className="w-full bg-white rounded-lg">
-            <TableHeader className="bg-[#FDE1D3]">
-              <TableRow>
-                <TableHead className="w-[200px]"></TableHead>
+          <Table className="w-full bg-white rounded-lg shadow-lg">
+            <TableHeader className="bg-[#FDE1D3] rounded-t-lg">
+              <TableRow className="rounded-t-lg">
+                <TableHead className="w-[200px] rounded-tl-lg"></TableHead>
                 <TableHead className="text-center font-bold italic">SuperPOS</TableHead>
                 <TableHead className="text-center font-bold">Custom</TableHead>
-                <TableHead className="text-center font-bold">Other POS System</TableHead>
+                <TableHead className="text-center font-bold rounded-tr-lg">Other POS System</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {comparisons.map((item) => (
-                <TableRow key={item.feature}>
-                  <TableCell className="font-medium">{item.feature}</TableCell>
+              {comparisons.map((item, index) => (
+                <TableRow 
+                  key={item.feature} 
+                  className={index === comparisons.length - 1 ? 'rounded-b-lg' : ''}
+                >
+                  <TableCell 
+                    className={`font-medium ${index === comparisons.length - 1 ? 'rounded-bl-lg' : ''}`}
+                  >
+                    {item.feature}
+                  </TableCell>
                   <TableCell className="text-center">{item.superpos}</TableCell>
                   <TableCell className="text-center">{item.custom}</TableCell>
-                  <TableCell className="text-center">{item.other}</TableCell>
+                  <TableCell 
+                    className={`text-center ${index === comparisons.length - 1 ? 'rounded-br-lg' : ''}`}
+                  >
+                    {item.other}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
