@@ -1,10 +1,13 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Globe, Smartphone, Code, QrCode, Share } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+
 const FeaturesSection = () => {
   const [activeFeature, setActiveFeature] = useState("Ordering Suite");
+  
   const features = [{
     label: 'Ordering Suite'
   }, {
@@ -16,6 +19,7 @@ const FeaturesSection = () => {
   }, {
     label: 'Payment Solution'
   }];
+  
   const orderingFeatures = [{
     icon: Globe,
     label: 'Ordering Website'
@@ -32,9 +36,11 @@ const FeaturesSection = () => {
     icon: Share,
     label: 'Social Media Ordering'
   }];
+  
   const handleValueChange = (value: string) => {
     if (value) setActiveFeature(value);
   };
+  
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}

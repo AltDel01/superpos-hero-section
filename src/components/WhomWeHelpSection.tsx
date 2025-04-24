@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Rocket, Cloud, Chain, DeliveryCompany } from 'lucide-react';
+import { Rocket, Cloud, Link, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const WhomWeHelpSection = () => {
@@ -12,7 +12,7 @@ const WhomWeHelpSection = () => {
       image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
     },
     {
-      icon: Chain,
+      icon: Link,
       title: "Chain Restaurants",
       description: "Want to simplify operational workflows of your restaurant chains? Our readymade Food delivery solution automates food orders & deliveries to simplify business management.",
       image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
@@ -24,7 +24,7 @@ const WhomWeHelpSection = () => {
       image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
     },
     {
-      icon: DeliveryCompany,
+      icon: Truck,
       title: "Delivery Company",
       description: "We empower delivery companies to streamline operations, enhance efficiency, and exceed customer expectations in today's fast-paced digital landscape.",
       image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
