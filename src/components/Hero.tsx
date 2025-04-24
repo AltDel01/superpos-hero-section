@@ -30,27 +30,12 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div className="bg-[#FFF6F3] px-8 py-3 rounded-full flex items-center gap-4 mb-12 relative">
-          <div className="absolute -left-6 text-primary rotate-[30deg]">
-            <Wheat className="h-5 w-5" />
-          </div>
-          <div className="flex items-center gap-2">
-            <img 
-              src="/lovable-uploads/ddb2bd86-28ad-47d3-ad89-16bac0ee9368.png" 
-              alt="Capterra Logo" 
-              className="h-5 w-auto"
-            />
-            <span className="text-gray-600">|</span>
-            <span className="font-medium">5.0/5</span>
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-              ))}
-            </div>
-          </div>
-          <div className="absolute -right-6 text-primary -rotate-[30deg]">
-            <Wheat className="h-5 w-5" />
-          </div>
+        <div className="mb-12">
+          <img 
+            src="/lovable-uploads/50aac8d4-df29-49cd-9715-c0c0ca8b41fe.png" 
+            alt="Capterra Rating 5.0/5" 
+            className="h-8 w-auto"
+          />
         </div>
 
         <div className="w-full max-w-5xl animate-fade-in">
