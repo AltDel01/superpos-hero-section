@@ -7,6 +7,7 @@ import ComparisonSection from "@/components/ComparisonSection"
 import WhomWeHelpSection from "@/components/WhomWeHelpSection"
 import StatsSection from "@/components/StatsSection"
 import DeliveryOptionsSection from "@/components/DeliveryOptionsSection"
+import BenefitsSection from "@/components/BenefitsSection"
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <WhomWeHelpSection />
       <StatsSection />
       <DeliveryOptionsSection />
+      <BenefitsSection />
     </div>
   )
 }
