@@ -1,36 +1,36 @@
 
 import React from 'react';
-import { Utensils, ShoppingBasket, Pizza, Meat, Wine, Pharmacy } from 'lucide-react';
+import { Utensils, ShoppingBasket, Pizza, Beef, Wine, Stethoscope } from 'lucide-react';
 
 const DeliveryOptionsSection = () => {
   const deliveryOptions = [
     {
-      icon: <Utensils className="w-8 h-8" />,
+      icon: <Utensils className="w-8 h-8 text-orange-500" />,
       title: "Food Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     },
     {
-      icon: <ShoppingBasket className="w-8 h-8" />,
+      icon: <ShoppingBasket className="w-8 h-8 text-orange-500" />,
       title: "Grocery Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     },
     {
-      icon: <Pizza className="w-8 h-8" />,
+      icon: <Pizza className="w-8 h-8 text-orange-500" />,
       title: "Pizza Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     },
     {
-      icon: <Meat className="w-8 h-8" />,
+      icon: <Beef className="w-8 h-8 text-orange-500" />,
       title: "Meat Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     },
     {
-      icon: <Wine className="w-8 h-8" />,
+      icon: <Wine className="w-8 h-8 text-orange-500" />,
       title: "Liquor Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     },
     {
-      icon: <Pharmacy className="w-8 h-8" />,
+      icon: <Stethoscope className="w-8 h-8 text-orange-500" />,
       title: "Pharmacy Delivery",
       imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
     }
