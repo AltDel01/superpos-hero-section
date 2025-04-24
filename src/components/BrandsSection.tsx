@@ -5,23 +5,23 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const BrandsSection = () => {
   const brands = [{
-    src: "/lovable-uploads/1c0c9294-a28f-4ae4-ae2e-23c6af0268aa.png",
-    alt: "Solaria"
+    src: "/placeholder.svg",
+    alt: "Brand 1"
   }, {
-    src: "/lovable-uploads/ed1ab54e-c773-43ce-9918-5745f7731440.png",
-    alt: "Fogo Brazilian BBQ"
+    src: "/placeholder.svg",
+    alt: "Brand 2"
   }, {
-    src: "/lovable-uploads/a9dcd907-81bc-410c-a97e-5fcda90eac59.png",
-    alt: "Grand Wing Heng"
+    src: "/placeholder.svg",
+    alt: "Brand 3"
   }, {
-    src: "/lovable-uploads/dac6333a-3908-4524-9a02-e38f0bd95d41.png",
-    alt: "Hangry"
+    src: "/placeholder.svg",
+    alt: "Brand 4"
   }, {
-    src: "/lovable-uploads/ef2cb903-5490-4a24-a71c-75dcb9ffa2ce.png",
-    alt: "Ayam Gepuk"
+    src: "/placeholder.svg",
+    alt: "Brand 5"
   }, {
-    src: "/lovable-uploads/38da9ec1-535a-4754-8319-ab6c70469aa6.png",
-    alt: "Wedrink"
+    src: "/placeholder.svg",
+    alt: "Brand 6"
   }];
 
   return <section className="py-16 bg-[#f4efe9]">
@@ -65,3 +65,4 @@ const BrandsSection = () => {
 };
 
 export default BrandsSection;
+
