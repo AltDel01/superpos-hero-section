@@ -52,16 +52,20 @@ const DeliveryOptionsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {deliveryOptions.map((option, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 flex flex-col items-center">
+            <div 
+              key={index} 
+              className="bg-white rounded-2xl p-6 flex flex-col items-center animate-fade-in"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
               <div className="mb-4">
                 {option.icon}
               </div>
               <h3 className="text-lg font-semibold mb-4">{option.title}</h3>
-              <div className="w-full h-[500px] relative overflow-hidden rounded-xl flex items-center justify-center">
+              <div className="w-full h-[500px] relative overflow-hidden rounded-xl flex items-center justify-center group">
                 <img
                   src={option.imageUrl}
                   alt={option.title}
-                  className="max-w-full max-h-full object-contain"
+                  className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
