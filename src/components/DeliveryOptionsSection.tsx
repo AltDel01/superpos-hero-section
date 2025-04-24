@@ -6,7 +6,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Utensils className="w-8 h-8 text-orange-500" />,
       title: "Food Delivery",
-      imageUrl: "/lovable-uploads/e5c92def-79e3-4b2a-a557-9d40163f9bf6.png"
+      imageUrl: "/lovable-uploads/69143170-dac3-46a7-900f-d27b45df0193.png"
     },
     {
       icon: <ShoppingBasket className="w-8 h-8 text-orange-500" />,
@@ -56,11 +56,11 @@ const DeliveryOptionsSection = () => {
                 {option.icon}
               </div>
               <h3 className="text-lg font-semibold mb-4">{option.title}</h3>
-              <div className="w-full h-64 relative overflow-hidden rounded-xl">
+              <div className="w-full h-[500px] relative overflow-hidden rounded-xl flex items-center justify-center">
                 <img
                   src={option.imageUrl}
                   alt={option.title}
-                  className="w-full h-full object-cover"
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </div>
