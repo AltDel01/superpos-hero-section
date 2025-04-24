@@ -59,7 +59,7 @@ const FeaturesSection = () => {
         {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column */}
-          <Card className="p-8 border-0 shadow-lg py-[110px]">
+          <Card className="p-8 border-0 shadow-lg py-[115px]">
             <CardContent className="p-0 space-y-6">
               <h3 className="text-2xl font-bold py-[20px]">Accept & Manage Orders Online</h3>
               <p className="text-gray-600">
