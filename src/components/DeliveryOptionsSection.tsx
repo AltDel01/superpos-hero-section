@@ -21,7 +21,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Beef className="w-8 h-8 text-orange-500" />,
       title: "Meat Delivery",
-      imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
+      imageUrl: "/lovable-uploads/1da599b8-654e-4f64-832c-b8b7adce443c.png"
     },
     {
       icon: <Wine className="w-8 h-8 text-orange-500" />,
