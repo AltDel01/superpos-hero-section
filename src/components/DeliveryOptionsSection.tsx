@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Utensils, ShoppingBasket, Pizza, Beef, Wine, Stethoscope } from 'lucide-react';
 
@@ -7,7 +6,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Utensils className="w-8 h-8 text-orange-500" />,
       title: "Food Delivery",
-      imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
+      imageUrl: "/lovable-uploads/e5c92def-79e3-4b2a-a557-9d40163f9bf6.png"
     },
     {
       icon: <ShoppingBasket className="w-8 h-8 text-orange-500" />,
