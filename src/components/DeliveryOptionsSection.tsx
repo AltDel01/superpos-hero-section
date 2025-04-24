@@ -16,7 +16,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Pizza className="w-8 h-8 text-orange-500" />,
       title: "Pizza Delivery",
-      imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
+      imageUrl: "/lovable-uploads/6d688bb5-c2f1-4703-a534-8281b4fc9fe0.png"
     },
     {
       icon: <Beef className="w-8 h-8 text-orange-500" />,
