@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Rocket, Cloud, Link, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -24,9 +25,9 @@ const WhomWeHelpSection = () => {
     },
     {
       icon: Truck,
-      title: "Delivery Company",
-      description: "We empower delivery companies to streamline operations, enhance efficiency, and exceed customer expectations in today's fast-paced digital landscape.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      title: "Food Delivery",
+      description: "We empower food delivery companies to streamline operations, enhance efficiency, and exceed customer expectations in today's fast-paced digital landscape.",
+      image: "/lovable-uploads/ae5be8de-9f22-4bba-bdbc-cc5f6bfb2830.png"
     }
   ];
 
