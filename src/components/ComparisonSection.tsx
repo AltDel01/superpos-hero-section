@@ -92,7 +92,8 @@ const ComparisonSection = () => {
           <Table className="w-full bg-white rounded-lg">
             <TableHeader className="bg-[#FDE1D3]">
               <TableRow>
-                <TableHead className="w-[200px] font-bold">SuperPOS</TableHead>
+                <TableHead className="w-[200px]"></TableHead>
+                <TableHead className="text-center font-bold italic">SuperPOS</TableHead>
                 <TableHead className="text-center font-bold">Custom</TableHead>
                 <TableHead className="text-center font-bold">Other POS System</TableHead>
               </TableRow>
