@@ -114,8 +114,8 @@ const BenefitsSection = () => {
                 <div className="mb-4">
                   <DualColorIcon icon={benefit.icon} accentColor={benefit.accentColor} />
                 </div>
-                <h3 className="font-semibold text-lg mb-1">{benefit.title}</h3>
-                <p className="text-gray-600 text-sm">{benefit.subtitle}</p>
+                <h3 className="font-bold text-lg mb-1">{benefit.title}</h3>
+                <p className="font-bold text-sm text-gray-600">{benefit.subtitle}</p>
               </CardContent>
             </Card>
           ))}
@@ -126,3 +126,4 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
+
