@@ -3,7 +3,7 @@ import { Wheat } from "lucide-react"
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center px-4 mt-8 max-w-7xl mx-auto">
+    <div className="flex flex-col items-center px-4 mt-4 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center">
         <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6">
           The Best F&B Point-of-Sale System
@@ -46,7 +46,7 @@ const Hero = () => {
           <img
             src="/lovable-uploads/0bf8d20d-3bfd-4d65-a701-e54f36213537.png"
             alt="SuperPOS Dashboard"
-            className="w-full h-auto rounded-lg shadow-xl transition-transform duration-500 hover:scale-105"
+            className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>
