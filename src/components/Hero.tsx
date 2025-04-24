@@ -1,5 +1,5 @@
-
 import { Button } from "@/components/ui/button"
+import { Wheat } from "lucide-react"
 
 const Hero = () => {
   return (
@@ -30,17 +30,23 @@ const Hero = () => {
           </Button>
         </div>
 
-        <div className="bg-[#FFF6F3] px-8 py-3 rounded-full flex items-center gap-3 mb-12">
+        <div className="bg-[#FFF6F3] px-8 py-3 rounded-full flex items-center gap-3 mb-12 relative">
+          <div className="absolute -left-6 text-primary">
+            <Wheat className="h-5 w-5" />
+          </div>
           <span className="font-medium">Capterra</span>
           <span className="text-amber-400">★</span>
           <span className="font-medium">5.0/5</span>
+          <div className="absolute -right-6 text-primary">
+            <Wheat className="h-5 w-5" />
+          </div>
         </div>
 
-        <div className="w-full max-w-5xl">
+        <div className="w-full max-w-5xl animate-fade-in">
           <img
             src="/lovable-uploads/0bf8d20d-3bfd-4d65-a701-e54f36213537.png"
             alt="SuperPOS Dashboard"
-            className="w-full h-auto rounded-lg shadow-xl"
+            className="w-full h-auto rounded-lg shadow-xl transition-transform duration-500 hover:scale-105"
           />
         </div>
       </div>
