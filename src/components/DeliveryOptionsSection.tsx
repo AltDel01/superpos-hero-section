@@ -32,7 +32,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Stethoscope className="w-8 h-8 text-orange-500" />,
       title: "Pharmacy Delivery",
-      imageUrl: "/lovable-uploads/f35751fe-0a1f-4b54-88dd-e6fe61090ac9.png"
+      imageUrl: "/lovable-uploads/c3abadd1-c712-46b2-b9e4-2a37ee810ae0.png"
     }
   ];
 
