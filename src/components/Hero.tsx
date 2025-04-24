@@ -11,7 +11,7 @@ const Hero = () => {
       <h1 className="text-5xl font-bold mb-6 leading-tight">
         Launch, Grow And Scale Your
         <br />
-        <span className="text-primary">Food & Beverage</span> Business with <span className="italic">SuperPOS</span>
+        <span className="text-primary">Food & Beverage</span> Business with <span className="font-bold italic">SuperPOS</span>
       </h1>
       
       <p className="text-gray-600 max-w-3xl mb-8">
@@ -29,11 +29,14 @@ const Hero = () => {
         </Button>
       </div>
 
-      <div className="bg-[#FFF6F3] px-6 py-2 rounded-full flex items-center gap-2">
+      <div className="bg-[#FFF6F3] px-8 py-3 rounded-full flex items-center gap-3 relative">
+        <div className="absolute left-0 right-0 -z-10">
+          <img src="/lovable-uploads/0e4e7893-1b3d-4083-a456-14086edcd756.png" alt="" className="w-full h-full object-cover" />
+        </div>
         <img src="https://capterra.com/favicon.ico" alt="Capterra" className="w-5 h-5" />
         <span className="font-medium">Capterra</span>
         <span className="text-amber-400">★</span>
-        <span>5.0/5</span>
+        <span className="font-medium">5.0/5</span>
       </div>
 
       <div className="mt-12 w-full">

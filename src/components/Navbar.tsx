@@ -5,8 +5,8 @@ import { ChevronDown } from "lucide-react"
 const Navbar = () => {
   return (
     <nav className="py-4 px-6 flex items-center justify-between w-full">
-      <div className="flex items-center gap-12">
-        <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-8" />
+      <img src="/lovable-uploads/2dc3af84-e70e-45ac-893c-cf4eecd98cf4.png" alt="SuperPOS Logo" className="h-12 object-contain" />
+      <div className="flex-1 flex justify-center">
         <div className="flex gap-8">
           <a href="#" className="flex items-center text-gray-700 hover:text-primary">
             Product <ChevronDown className="ml-1 h-4 w-4" />
