@@ -14,7 +14,7 @@ const WhomWeHelpSection = () => {
       icon: Link,
       title: "Chain Restaurants",
       description: "Want to simplify operational workflows of your restaurant chains? Our readymade Food delivery solution automates food orders & deliveries to simplify business management.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/64547245-f55f-4164-a778-dae63f7e0578.png"
     },
     {
       icon: Cloud,
