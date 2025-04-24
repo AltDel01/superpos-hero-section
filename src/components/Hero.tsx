@@ -1,12 +1,9 @@
-
-import { Button } from "@/components/ui/button"
-import { Star, Wheat } from "lucide-react"
-
+import { Button } from "@/components/ui/button";
+import { Star, Wheat } from "lucide-react";
 const Hero = () => {
-  return (
-    <div className="flex flex-col items-center px-4 mt-2 max-w-7xl mx-auto">
+  return <div className="flex flex-col items-center px-4 mt-2 max-w-7xl mx-auto">
       <div className="flex flex-col items-center text-center">
-        <div className="bg-primary/10 text-primary px-4 py-1 rounded-full text-sm mb-6 font-bold">
+        <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold py-[6px] my-[20px]">
           The Best F&B Point-of-Sale System
         </div>
         
@@ -32,23 +29,13 @@ const Hero = () => {
         </div>
 
         <div className="mb-12">
-          <img 
-            src="/lovable-uploads/50aac8d4-df29-49cd-9715-c0c0ca8b41fe.png" 
-            alt="Capterra Rating 5.0/5" 
-            className="h-24 w-auto" 
-          />
+          <img src="/lovable-uploads/50aac8d4-df29-49cd-9715-c0c0ca8b41fe.png" alt="Capterra Rating 5.0/5" className="h-24 w-auto" />
         </div>
 
         <div className="w-full max-w-5xl animate-fade-in">
-          <img
-            src="/lovable-uploads/0bf8d20d-3bfd-4d65-a701-e54f36213537.png"
-            alt="SuperPOS Dashboard"
-            className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-105"
-          />
+          <img src="/lovable-uploads/0bf8d20d-3bfd-4d65-a701-e54f36213537.png" alt="SuperPOS Dashboard" className="w-full h-auto rounded-lg transition-transform duration-500 hover:scale-105" />
         </div>
       </div>
-    </div>
-  )
-}
-
-export default Hero
+    </div>;
+};
+export default Hero;
