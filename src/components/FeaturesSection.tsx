@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-import { OrderingWebsite, BrandedMobileApps, OrderingWidget, QrCodeOrdering, SocialMediaOrdering } from 'lucide-react';
+import { Globe, Smartphone, Code, QrCode, Share } from 'lucide-react';
 
 const FeaturesSection = () => {
   const features = [
@@ -14,11 +14,11 @@ const FeaturesSection = () => {
   ];
 
   const orderingFeatures = [
-    { icon: OrderingWebsite, label: 'Ordering Website' },
-    { icon: BrandedMobileApps, label: 'Branded Mobile Apps' },
-    { icon: OrderingWidget, label: 'Ordering Widget' },
-    { icon: QrCodeOrdering, label: 'QR Code Ordering' },
-    { icon: SocialMediaOrdering, label: 'Social Media Ordering' },
+    { icon: Globe, label: 'Ordering Website' },
+    { icon: Smartphone, label: 'Branded Mobile Apps' },
+    { icon: Code, label: 'Ordering Widget' },
+    { icon: QrCode, label: 'QR Code Ordering' },
+    { icon: Share, label: 'Social Media Ordering' },
   ];
 
   return (
