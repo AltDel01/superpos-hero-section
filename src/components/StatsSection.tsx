@@ -16,45 +16,34 @@ const StatsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Hero Image */}
-          <div className="relative md:col-span-1">
-            <img 
-              src="/lovable-uploads/60ff4feb-2c0f-4ab4-a338-62d3a569085b.png"
-              alt="Happy user working on laptop" 
-              className="w-full h-auto rounded-2xl"
-            />
+        {/* Stats Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {/* Orders Stat */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border">
+            <Calendar className="w-8 h-8 mb-4 text-[#FF6634]" />
+            <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">140K</h3>
+            <p className="text-gray-600">Orders Delivering every month by our Solution</p>
           </div>
 
-          {/* Stats Grid */}
-          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Orders Stat */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border">
-              <Calendar className="w-8 h-8 mb-4 text-gray-600" />
-              <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">140K</h3>
-              <p className="text-gray-600">Orders Delivering every month by our Solution</p>
-            </div>
+          {/* Countries Stat */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border">
+            <Flag className="w-8 h-8 mb-4 text-[#FF6634]" />
+            <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">48+</h3>
+            <p className="text-gray-600">Countries using our solution and Growing</p>
+          </div>
 
-            {/* Countries Stat */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border">
-              <Flag className="w-8 h-8 mb-4 text-gray-600" />
-              <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">48+</h3>
-              <p className="text-gray-600">Countries using our solution and Growing</p>
-            </div>
+          {/* Business Stat */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border">
+            <Store className="w-8 h-8 mb-4 text-[#FF6634]" />
+            <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">20,000+</h3>
+            <p className="text-gray-600">Business Onboarded on our solution</p>
+          </div>
 
-            {/* Business Stat */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border">
-              <Store className="w-8 h-8 mb-4 text-gray-600" />
-              <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">20,000+</h3>
-              <p className="text-gray-600">Business Onboarded on our solution</p>
-            </div>
-
-            {/* Revenue Stat */}
-            <div className="bg-white p-8 rounded-2xl shadow-sm border">
-              <Users className="w-8 h-8 mb-4 text-gray-600" />
-              <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">1 Billion +</h3>
-              <p className="text-gray-600">Revenue made with this solution and growing</p>
-            </div>
+          {/* Revenue Stat */}
+          <div className="bg-white p-8 rounded-2xl shadow-sm border">
+            <Users className="w-8 h-8 mb-4 text-[#FF6634]" />
+            <h3 className="text-4xl font-bold text-[#1a1f2c] mb-2">1 Billion +</h3>
+            <p className="text-gray-600">Revenue made with this solution and growing</p>
           </div>
         </div>
       </div>
