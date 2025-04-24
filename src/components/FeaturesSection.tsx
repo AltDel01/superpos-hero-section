@@ -62,7 +62,7 @@ const FeaturesSection = () => {
           {/* Left Column */}
           <Card className="p-8 border-0 shadow-lg py-[120px]">
             <CardContent className="p-0 space-y-6">
-              <h3 className="text-2xl font-bold py-[10px]">Accept & Manage Orders Online</h3>
+              <h3 className="text-2xl font-bold py-[20px]">Accept & Manage Orders Online</h3>
               <p className="text-gray-600">
                 Set up & Grow Your Online Ordering Business in minutes with an all-in-one Online
                 Ordering Solution. Let your customers order food and other products online
