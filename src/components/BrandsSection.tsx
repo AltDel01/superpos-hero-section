@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
@@ -12,15 +11,13 @@ const BrandsSection = () => {
     alt: "SEC Bowl"
   }, {
     src: "/lovable-uploads/c8446695-18d3-4e4b-826f-c7aefac85289.png",
-    alt: "Roti'O",
-    className: "scale-150"
+    alt: "Roti'O"
   }, {
     src: "/lovable-uploads/1220abb3-3b80-4113-acef-5410eb6491b3.png",
     alt: "Wedrink"
   }, {
     src: "/lovable-uploads/18a50f87-cd81-4a12-86c2-e70bcb81d974.png",
-    alt: "Tomoro Coffee",
-    className: "scale-150"
+    alt: "Tomoro Coffee"
   }, {
     src: "/lovable-uploads/5c6f9ac7-2fa0-4535-be0c-381db38f3a42.png",
     alt: "SEC Bowl Lite"
@@ -32,12 +29,10 @@ const BrandsSection = () => {
     alt: "Fogo Brazilian BBQ"
   }, {
     src: "/lovable-uploads/c739474c-5892-425e-a3e5-bd354a16fa58.png",
-    alt: "Grand Wing Heng",
-    className: "scale-150"
+    alt: "Grand Wing Heng"
   }, {
     src: "/lovable-uploads/6f820d8e-5bf9-4b01-8bb6-5a29766dc43d.png",
-    alt: "Hangry",
-    className: "scale-150"
+    alt: "Hangry"
   }, {
     src: "/lovable-uploads/9b4800e9-6a98-4f3d-931a-5cae6a65de87.png",
     alt: "Hangry Alt"
@@ -87,18 +82,16 @@ const BrandsSection = () => {
           playOnInit: true,
           stopOnLastSnap: false
         })]} className="w-full">
-          <CarouselContent className="-ml-0 md:-ml-0">
-            {brands.map((brand, index) => (
-              <CarouselItem key={index} className="pl-0 md:pl-0 md:basis-1/5 lg:basis-1/6">
-                <div className="aspect-square w-full bg-[#f4efe9] rounded-none p-4 flex items-center justify-center">
+          <CarouselContent className="-ml-2 md:-ml-4">
+            {brands.map((brand, index) => <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/5 lg:basis-1/6">
+                <div className="aspect-square w-full bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
                   <img 
                     src={brand.src} 
                     alt={brand.alt} 
-                    className={`w-full h-full object-contain hover:scale-110 transition-transform duration-500 ${brand.className || ''}`}
+                    className="w-full h-full object-contain hover:scale-110 transition-transform duration-500" 
                   />
                 </div>
-              </CarouselItem>
-            ))}
+              </CarouselItem>)}
           </CarouselContent>
         </Carousel>
       </div>
