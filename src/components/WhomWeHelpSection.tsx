@@ -9,25 +9,25 @@ const WhomWeHelpSection = () => {
       icon: Rocket,
       title: "F&B Outlet",
       description: "Starting your journey with the passion of cooking? Put your foot strong with our White-label F&B App Solution that offers a complete suite of advanced features to succeed.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/43ba9eb3-6d64-41a2-9678-bee53bd73e26.png" // Woman serving bread image
     },
     {
       icon: Link,
       title: "Chain Restaurants",
       description: "Want to simplify operational workflows of your restaurant chains? Our readymade Food delivery solution automates food orders & deliveries to simplify business management.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/47b352f3-a8e6-4c8a-b527-11f2104e5e5f.png" // Solaria restaurant image
     },
     {
       icon: Cloud,
       title: "Cloud Kitchens",
       description: "Want a platform for your dark kitchen to connect with your customers? Count on your readymade white-label restaurant delivery solution and flaunt your delicious meals online.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/23ce913a-cf19-4d4c-927d-f1c914df5caf.png" // Kitchen staff working image
     },
     {
       icon: Truck,
       title: "Delivery Company",
       description: "We empower delivery companies to streamline operations, enhance efficiency, and exceed customer expectations in today's fast-paced digital landscape.",
-      image: "/lovable-uploads/2e45b031-175e-4be5-9e49-31be51f8a289.png"
+      image: "/lovable-uploads/fa4b1ad9-442b-49bd-b031-1c861a1c36e3.png" // Delivery man in red image
     }
   ];
 
