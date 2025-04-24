@@ -10,11 +10,11 @@ const BrandsSection = () => {
     { src: "/lovable-uploads/aa7e7321-7365-4f48-9042-0340bd93f69a.png", alt: "Roti'O" },
     { src: "/lovable-uploads/38da9ec1-535a-4754-8319-ab6c70469aa6.png", alt: "Wedrink" },
     { src: "/lovable-uploads/a84f5611-bf44-4e6a-8a49-abc4e4d83a05.png", alt: "Tomoro Coffee" },
-    { src: "/lovable-uploads/fe6b5bad-5863-4068-bbcf-cee9d95580d1.png", alt: "Sec Bowl" },
+    { src: "/lovable-uploads/e9101df2-4c4e-40a4-8a71-d011f932a5b7.png", alt: "Sec Bowl" }, // Updated Sec Bowl image
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <div className="text-primary mb-4 font-medium">
@@ -27,9 +27,12 @@ const BrandsSection = () => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+        <div className="flex flex-nowrap justify-center gap-8 overflow-x-auto pb-8">
           {brands.map((brand, index) => (
-            <div key={index} className="w-32 h-32 flex items-center justify-center p-4">
+            <div 
+              key={index} 
+              className="flex-shrink-0 w-40 h-40 bg-white rounded-lg shadow-md flex items-center justify-center p-6"
+            >
               <img
                 src={brand.src}
                 alt={brand.alt}
@@ -44,3 +47,4 @@ const BrandsSection = () => {
 };
 
 export default BrandsSection;
+
