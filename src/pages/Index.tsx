@@ -4,6 +4,7 @@ import Hero from "@/components/Hero"
 import BrandsSection from "@/components/BrandsSection"
 import FeaturesSection from "@/components/FeaturesSection"
 import ComparisonSection from "@/components/ComparisonSection"
+import WhomWeHelpSection from "@/components/WhomWeHelpSection"
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <BrandsSection />
       <FeaturesSection />
       <ComparisonSection />
+      <WhomWeHelpSection />
     </div>
   )
 }
