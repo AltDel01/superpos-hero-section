@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
@@ -31,10 +32,12 @@ const BrandsSection = () => {
     alt: "Fogo Brazilian BBQ"
   }, {
     src: "/lovable-uploads/c739474c-5892-425e-a3e5-bd354a16fa58.png",
-    alt: "Grand Wing Heng"
+    alt: "Grand Wing Heng",
+    className: "scale-150"
   }, {
     src: "/lovable-uploads/6f820d8e-5bf9-4b01-8bb6-5a29766dc43d.png",
-    alt: "Hangry"
+    alt: "Hangry",
+    className: "scale-150"
   }, {
     src: "/lovable-uploads/9b4800e9-6a98-4f3d-931a-5cae6a65de87.png",
     alt: "Hangry Alt"
