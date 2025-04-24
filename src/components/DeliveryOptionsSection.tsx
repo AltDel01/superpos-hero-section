@@ -6,7 +6,7 @@ const DeliveryOptionsSection = () => {
     {
       icon: <Utensils className="w-8 h-8 text-orange-500" />,
       title: "Food Delivery",
-      imageUrl: "/lovable-uploads/69143170-dac3-46a7-900f-d27b45df0193.png"
+      imageUrl: "/lovable-uploads/27f13b91-dc4c-4510-82e0-888e564af6df.png"
     },
     {
       icon: <ShoppingBasket className="w-8 h-8 text-orange-500" />,
