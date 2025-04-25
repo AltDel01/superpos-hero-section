@@ -33,16 +33,16 @@ const SuccessStoriesSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {stories.map((story, index) => <Card key={index} className="bg-white rounded-3xl overflow-hidden border shadow-lg">
               <CardContent className="p-6">
-                <div className="relative w-full aspect-[9/16] mb-6 bg-[#f4f4f4] rounded-2xl flex items-center justify-center">
+                <div className="relative w-full aspect-[16/9] mb-4 bg-[#f4f4f4] rounded-2xl flex items-center justify-center">
                   <img src={story.image} alt={story.title} className="w-full h-full object-contain p-4" />
                 </div>
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-[#f4f4f4] flex items-center justify-center overflow-hidden">
-                    <img src={story.logo} alt={`${story.title} logo`} className="w-8 h-8 object-contain" />
+                <div className="flex items-center gap-4 mb-2">
+                  <div className="w-10 h-10 rounded-full bg-[#f4f4f4] flex items-center justify-center overflow-hidden">
+                    <img src={story.logo} alt={`${story.title} logo`} className="w-6 h-6 object-contain" />
                   </div>
-                  <h3 className="text-xl font-bold">{story.title}</h3>
+                  <h3 className="text-lg font-bold">{story.title}</h3>
                 </div>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed line-clamp-2">
                   {story.description}
                 </p>
               </CardContent>
