@@ -56,7 +56,7 @@ const RatingsSection = () => {
             </Button>
           </div>
           <div className="flex-shrink-0">
-            <img src="/lovable-uploads/53799fb6-c4ec-45ac-ad77-c481c3826511.png" alt="Location marker" className="w-48 h-48 object-contain" />
+            <img src="/lovable-uploads/4bbbfd87-4307-47d3-9ac5-661ab9f0be57.png" alt="Location marker" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </div>
