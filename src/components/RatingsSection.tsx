@@ -17,7 +17,7 @@ const RatingsSection = () => {
           <h2 className="text-4xl font-bold mb-2">
             <span className="font-bold">SuperPOS</span>'s Industry Rating: Trusted by
           </h2>
-          <h3 className="text-2xl font-bold">
+          <h3 className="text-4xl font-bold">
             Top Software Platforms
           </h3>
         </div>
