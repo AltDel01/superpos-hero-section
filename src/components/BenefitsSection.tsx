@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Hand, RefreshCw, Shield, Settings, Key, Headphones, DollarSign, CloudUpload, Smile } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
 const BenefitsSection = () => {
   const benefits = [{
     icon: <Hand strokeWidth={1.5} />,
@@ -56,7 +54,6 @@ const BenefitsSection = () => {
     title: "Best User",
     subtitle: "Experience"
   }];
-
   const DualColorIcon = ({
     icon,
     accentColor
@@ -76,14 +73,13 @@ const BenefitsSection = () => {
         </div>
       </div>;
   };
-
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-[#ffdfd3] text-[#FF6634] hover:bg-[#ffdfd3]/90 px-6 py-2 rounded-full mb-6 font-normal">
             The Best <span className="font-bold italic">F&B Point-of-Sale System</span>
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold mb-4">
             How <span className="font-bold">SuperPOS</span> Enables
             <br />
             Your Success?
@@ -103,5 +99,4 @@ const BenefitsSection = () => {
       </div>
     </section>;
 };
-
 export default BenefitsSection;
