@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Smartphone } from 'lucide-react';
+
 const SuccessStoriesSection = () => {
   const stories = [{
     title: "UPH Canteen (Kawaraci)",
@@ -14,6 +15,7 @@ const SuccessStoriesSection = () => {
     image: "/lovable-uploads/56c9cf2e-4d00-4897-9233-494aac9ba45e.png",
     logo: "/lovable-uploads/773017b7-cd5a-4380-9314-bc4c6f85d342.png"
   }];
+  
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
@@ -31,8 +33,8 @@ const SuccessStoriesSection = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {stories.map((story, index) => <Card key={index} className="bg-white rounded-3xl overflow-hidden border shadow-lg">
               <CardContent className="p-6">
-                <div className="relative w-full h-[500px] mb-6 bg-[#f4f4f4] rounded-2xl flex items-center justify-center">
-                  <img src={story.image} alt={story.title} className="w-full h-full object-contain p-0" />
+                <div className="relative w-full aspect-[9/16] mb-6 bg-[#f4f4f4] rounded-2xl flex items-center justify-center">
+                  <img src={story.image} alt={story.title} className="w-full h-full object-contain p-4" />
                 </div>
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-full bg-[#f4f4f4] flex items-center justify-center overflow-hidden">
@@ -49,4 +51,5 @@ const SuccessStoriesSection = () => {
       </div>
     </section>;
 };
+
 export default SuccessStoriesSection;
