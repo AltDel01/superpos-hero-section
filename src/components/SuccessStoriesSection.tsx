@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +7,7 @@ const SuccessStoriesSection = () => {
   const stories = [{
     title: "UPH Canteen (Kawaraci)",
     description: "UPH Canteen serves as the leading healthy catering for retail and events. Providing a comprehensive platform for customers to order a wide array of food products, utilities, groceries, and everyday essentials from their preferred stores and restaurants, UPH Canteen ensures swift and hassle-free deliveries.",
-    image: "/lovable-uploads/9acab3ce-cca1-47e6-b093-02130bd8caab.png",
+    image: "/lovable-uploads/c128d050-32e6-4c8c-835a-6a6da20dc557.png", // Updated image
     logo: "/lovable-uploads/87d92d85-c1fb-43d4-b56c-4308abb7ca26.png"
   }, {
     title: "Go Food Court (Bekasi)",
