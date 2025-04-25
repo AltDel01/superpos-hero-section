@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,8 +15,8 @@ const SuccessStoriesSection = () => {
     {
       title: "Go Food Court (Bekasi)",
       description: "GO Foodcourt, Bekasi's first secure and cashless food ordering and delivery service, is revolutionizing dining in Bekasi with over 10,000+ downloads. By integrating mobile apps for consumers, vendors, and delivery drivers, GO Foodcourt offers PCI-compliant payments, real-time order tracking, and driver identification, setting a new standard for digital food services and supporting local businesses.",
-      image: "/lovable-uploads/72f2ad96-c1b3-4c56-80b4-894c083ce52c.png",
-      logo: "/lovable-uploads/72f2ad96-c1b3-4c56-80b4-894c083ce52c.png"
+      image: "/lovable-uploads/56c9cf2e-4d00-4897-9233-494aac9ba45e.png",
+      logo: "/lovable-uploads/773017b7-cd5a-4380-9314-bc4c6f85d342.png"
     }
   ];
 
