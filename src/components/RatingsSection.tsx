@@ -1,28 +1,20 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
-
 const RatingsSection = () => {
-  const ratings = [
-    {
-      logo: "/lovable-uploads/1220abb3-3b80-4113-acef-5410eb6491b3.png",
-      rating: 5.0
-    },
-    {
-      logo: "/lovable-uploads/69143170-dac3-46a7-900f-d27b45df0193.png",
-      rating: 5.0
-    },
-    {
-      logo: "/lovable-uploads/1da599b8-654e-4f64-832c-b8b7adce443c.png",
-      rating: 5.0
-    }
-  ];
-
-  return (
-    <section className="py-16 bg-[#f4efe9]">
+  const ratings = [{
+    logo: "/lovable-uploads/1220abb3-3b80-4113-acef-5410eb6491b3.png",
+    rating: 5.0
+  }, {
+    logo: "/lovable-uploads/69143170-dac3-46a7-900f-d27b45df0193.png",
+    rating: 5.0
+  }, {
+    logo: "/lovable-uploads/1da599b8-654e-4f64-832c-b8b7adce443c.png",
+    rating: 5.0
+  }];
+  return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-2">
+          <h2 className="text-4xl font-bold mb-2">
             <span className="font-bold">SuperPOS</span>'s Industry Rating: Trusted by
           </h2>
           <h3 className="text-2xl font-bold">
@@ -31,24 +23,15 @@ const RatingsSection = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {ratings.map((platform, index) => (
-            <div key={index} className="bg-white rounded-xl p-8 flex flex-col items-center justify-center shadow-sm">
+          {ratings.map((platform, index) => <div key={index} className="bg-white rounded-xl p-8 flex flex-col items-center justify-center shadow-sm">
               <img src={platform.logo} alt="Platform logo" className="h-8 mb-4 object-contain" />
               <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    className="w-5 h-5 text-yellow-400"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
+                  </svg>)}
                 <span className="ml-1 font-bold">{platform.rating}</span>
               </div>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         <div className="bg-white rounded-3xl p-12 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -65,16 +48,10 @@ const RatingsSection = () => {
             </Button>
           </div>
           <div className="flex-shrink-0">
-            <img 
-              src="/lovable-uploads/53799fb6-c4ec-45ac-ad77-c481c3826511.png" 
-              alt="Location marker" 
-              className="w-48 h-48 object-contain"
-            />
+            <img src="/lovable-uploads/53799fb6-c4ec-45ac-ad77-c481c3826511.png" alt="Location marker" className="w-48 h-48 object-contain" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default RatingsSection;
