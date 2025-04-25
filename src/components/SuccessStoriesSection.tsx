@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { smartphone } from 'lucide-react';
+import { Smartphone } from 'lucide-react';
 
 const SuccessStoriesSection = () => {
   const stories = [
     {
       title: "UPH Canteen (Kawaraci)",
       description: "UPH Canteen serves as the leading healthy catering for retail and events. Providing a comprehensive platform for customers to order a wide array of food products, utilities, groceries, and everyday essentials from their preferred stores and restaurants, UPH Canteen ensures swift and hassle-free deliveries.",
-      image: "/lovable-uploads/72f2ad96-c1b3-4c56-80b4-894c083ce52c.png",
-      logo: "/lovable-uploads/72f2ad96-c1b3-4c56-80b4-894c083ce52c.png"
+      image: "/lovable-uploads/9acab3ce-cca1-47e6-b093-02130bd8caab.png",
+      logo: "/lovable-uploads/87d92d85-c1fb-43d4-b56c-4308abb7ca26.png"
     },
     {
       title: "Go Food Court (Bekasi)",
@@ -21,7 +20,7 @@ const SuccessStoriesSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <Badge className="bg-[#ffdfd3] text-[#FF6634] hover:bg-[#ffdfd3]/90 px-6 py-2 rounded-full mb-6">
@@ -43,22 +42,15 @@ const SuccessStoriesSection = () => {
                   <img 
                     src={story.image} 
                     alt={story.title}
-                    className="w-[250px] h-auto"
+                    className="w-full h-full object-contain p-8"
                   />
-                  <div className="absolute inset-0 pointer-events-none">
-                    <div className="w-full h-full flex items-center justify-center">
-                      <div className="text-[#FFE5D8] text-[72px] font-bold opacity-20">
-                        TEMPLATE
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden">
+                  <div className="w-12 h-12 rounded-full bg-[#f4f4f4] flex items-center justify-center overflow-hidden">
                     <img 
                       src={story.logo} 
                       alt={`${story.title} logo`}
-                      className="w-full h-full object-cover"
+                      className="w-8 h-8 object-contain"
                     />
                   </div>
                   <h3 className="text-xl font-bold">{story.title}</h3>
