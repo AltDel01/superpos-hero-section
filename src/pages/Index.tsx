@@ -11,6 +11,7 @@ import BenefitsSection from "@/components/BenefitsSection"
 import SuccessStoriesSection from "@/components/SuccessStoriesSection"
 import RatingsSection from "@/components/RatingsSection"
 import ContactSection from "@/components/ContactSection"
+import Footer from "@/components/Footer"
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
       <SuccessStoriesSection />
       <RatingsSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }
