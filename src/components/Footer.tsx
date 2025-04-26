@@ -2,7 +2,7 @@
 import React from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Cylinder } from "lucide-react";
+import { Cylinder, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -42,13 +42,30 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             {/* Logo and Description */}
             <div className="md:col-span-1">
-              <img src="/lovable-uploads/6e6ab558-a577-424d-97fe-69b67d1817ee.png" alt="SuperPOS" className="h-12 mb-4" />
+              <img src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" alt="SuperPOS" className="h-12 mb-4" />
               <p className="text-gray-700 text-sm">
                 <span className="font-bold italic">SuperPOS</span> offers a Complete Online POS System for Food, Groceries, Meat, Milk, Snack, and more.
               </p>
               <p className="text-gray-700 text-sm mt-4">
                 Our platform is ideally suited for Small Food Outlet, Chain Restaurants, and cloud Kitchens.
               </p>
+              <div className="flex gap-4 mt-6">
+                <a href="#" className="text-gray-600 hover:text-[#FF6634] transition-colors">
+                  <Facebook size={24} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-[#FF6634] transition-colors">
+                  <Twitter size={24} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-[#FF6634] transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-[#FF6634] transition-colors">
+                  <Linkedin size={24} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-[#FF6634] transition-colors">
+                  <Youtube size={24} />
+                </a>
+              </div>
             </div>
 
             {/* Products */}
