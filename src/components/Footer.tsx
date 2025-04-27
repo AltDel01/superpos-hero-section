@@ -2,7 +2,8 @@
 import React from 'react';
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Cylinder, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
+import { Cylinder, Facebook, Twitter, Instagram, Linkedin, Youtube, User, Mail, Phone, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -159,7 +160,7 @@ const Footer = () => {
           <div className="flex flex-col justify-center">
             <div className="max-w-md">
               <h3 className="text-3xl font-bold text-black mb-2">Subscribe to Our Newsletter</h3>
-              <p className="text-black/70 max-w-xl mb-6">
+              <p className="text-black max-w-xl mb-6">
                 Stay updated with our latest features and releases
               </p>
               <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md">
