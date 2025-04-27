@@ -1,22 +1,13 @@
 
 import React from 'react';
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Cylinder, Facebook, Twitter, Instagram, Linkedin, Youtube, User, Mail, Phone, MessageSquare } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-  };
-
   return (
     <footer className="relative bg-gradient-to-b from-[#FF6634] to-white">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Main Footer Content */}
+        {/* Logo and Description */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          {/* Logo and Description */}
           <div className="md:col-span-1">
             <img 
               src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" 
@@ -78,69 +69,6 @@ const Footer = () => {
               <li><a href="#" className="text-black hover:text-[#FF6634]">Track Ticket</a></li>
               <li><a href="#" className="text-black hover:text-[#FF6634]">Become a Partner/Reseller</a></li>
             </ul>
-          </div>
-        </div>
-
-        {/* Combined Contact and Newsletter Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {/* Get in Touch Form */}
-          <div>
-            <h3 className="text-3xl font-bold text-black mb-6">Get in Touch</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="relative">
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <Input
-                  type="tel"
-                  placeholder="Your Phone"
-                  className="w-full"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <Textarea
-                  placeholder="Your Message"
-                  className="w-full min-h-[120px]"
-                  required
-                />
-              </div>
-              <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
-                Send Message
-              </Button>
-            </form>
-          </div>
-
-          {/* Newsletter Section */}
-          <div className="flex flex-col justify-center">
-            <h3 className="text-3xl font-bold text-black mb-2">Subscribe to Our Newsletter</h3>
-            <p className="text-black mb-6">
-              Stay updated with our latest features and releases
-            </p>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full"
-                required
-              />
-              <Button type="submit" className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
-                Subscribe
-              </Button>
-            </form>
           </div>
         </div>
 
