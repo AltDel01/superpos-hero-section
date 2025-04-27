@@ -8,16 +8,16 @@ import { Cylinder, Facebook, Twitter, Instagram, Linkedin, Youtube, User, Mail, 
 const Footer = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle newsletter subscription
+    // Handle form submission
   };
 
   return (
     <footer className="relative bg-gradient-to-b from-[#FF6634] to-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo and Description */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-1">
             <img 
               src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" 
               alt="SuperPOS" 
@@ -25,9 +25,6 @@ const Footer = () => {
             />
             <p className="text-black text-sm">
               <span className="font-bold italic">SuperPOS</span> offers a Complete Online POS System for Food, Groceries, Meat, Milk, Snack, and more.
-            </p>
-            <p className="text-black text-sm mt-4">
-              Our platform is ideally suited for Small Food Outlet, Chain Restaurants, and cloud Kitchens.
             </p>
             <div className="flex gap-4 mt-6">
               <a href="#" className="text-black hover:text-[#FF6634] transition-colors">
@@ -84,6 +81,69 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Combined Contact and Newsletter Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Get in Touch Form */}
+          <div>
+            <h3 className="text-3xl font-bold text-black mb-6">Get in Touch</h3>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="relative">
+                <Input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full"
+                  required
+                />
+              </div>
+              <div className="relative">
+                <Input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full"
+                  required
+                />
+              </div>
+              <div className="relative">
+                <Input
+                  type="tel"
+                  placeholder="Your Phone"
+                  className="w-full"
+                  required
+                />
+              </div>
+              <div className="relative">
+                <Textarea
+                  placeholder="Your Message"
+                  className="w-full min-h-[120px]"
+                  required
+                />
+              </div>
+              <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
+                Send Message
+              </Button>
+            </form>
+          </div>
+
+          {/* Newsletter Section */}
+          <div className="flex flex-col justify-center">
+            <h3 className="text-3xl font-bold text-black mb-2">Subscribe to Our Newsletter</h3>
+            <p className="text-black mb-6">
+              Stay updated with our latest features and releases
+            </p>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full"
+                required
+              />
+              <Button type="submit" className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
+                Subscribe
+              </Button>
+            </form>
+          </div>
+        </div>
+
         {/* Usecases */}
         <div className="mb-12">
           <h5 className="font-bold mb-3 text-black">Usecases:</h5>
@@ -98,88 +158,6 @@ const Footer = () => {
             <span>→ Courier Delivery</span>
             <span>→ Protein bar Delivery</span>
             <span>→ Milk Delivery</span>
-          </div>
-        </div>
-
-        {/* Contact and Newsletter Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {/* Contact Form */}
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
-            <h3 className="text-3xl font-bold text-black mb-6">Get in Touch</h3>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="relative">
-                <div className="absolute left-3 top-3 text-gray-400">
-                  <User className="h-5 w-5" />
-                </div>
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  className="pl-10"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <div className="absolute left-3 top-3 text-gray-400">
-                  <Mail className="h-5 w-5" />
-                </div>
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  className="pl-10"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <div className="absolute left-3 top-3 text-gray-400">
-                  <Phone className="h-5 w-5" />
-                </div>
-                <Input
-                  type="tel"
-                  placeholder="Your Phone"
-                  className="pl-10"
-                  required
-                />
-              </div>
-              <div className="relative">
-                <div className="absolute left-3 top-3 text-gray-400">
-                  <MessageSquare className="h-5 w-5" />
-                </div>
-                <Textarea
-                  placeholder="Your Message"
-                  className="pl-10 min-h-[120px]"
-                  required
-                />
-              </div>
-              <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
-                Send Message →
-              </Button>
-            </form>
-          </div>
-
-          {/* Newsletter Section */}
-          <div className="flex flex-col justify-center">
-            <div className="max-w-md">
-              <h3 className="text-3xl font-bold text-black mb-2">Subscribe to Our Newsletter</h3>
-              <p className="text-black max-w-xl mb-6">
-                Stay updated with our latest features and releases
-              </p>
-              <form onSubmit={handleSubmit} className="flex gap-2 w-full max-w-md">
-                <div className="relative flex-1">
-                  <div className="absolute left-3 top-2.5 text-gray-500">
-                    <Cylinder className="h-5 w-5" />
-                  </div>
-                  <Input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="pl-10 h-11 w-full bg-white rounded-full border border-gray-300"
-                    required
-                  />
-                </div>
-                <Button type="submit" className="bg-[#FF6634] hover:bg-[#FF6634]/90 text-white rounded-full px-6">
-                  Subscribe
-                </Button>
-              </form>
-            </div>
           </div>
         </div>
 
