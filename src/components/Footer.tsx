@@ -1,19 +1,12 @@
-
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="relative bg-gradient-to-b from-[#FF6634] to-white">
-      <div className="max-w-7xl mx-auto px-4">
+  return <footer className="relative bg-gradient-to-b from-[#FF6634] to-white">
+      <div className="max-w-7xl mx-auto px-4 py-[45px]">
         {/* Logo and Description */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
-            <img 
-              src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" 
-              alt="SuperPOS" 
-              className="h-48 mb-4"
-            />
+            <img src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" alt="SuperPOS" className="h-38 mb-0" />
             <p className="text-black text-sm">
               <span className="font-bold italic">SuperPOS</span> offers a Complete Online POS System for Food, Groceries, Meat, Milk, Snack, and more.
             </p>
@@ -100,8 +93,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
