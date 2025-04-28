@@ -1,102 +1,102 @@
 import React from 'react';
-import { Hand, RefreshCw, Shield, Settings, Key, Headphones, DollarSign, CloudUpload, Smile } from 'lucide-react';
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { CheckCircle, Store, ShoppingBag, CreditCard, ShieldCheck } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
 const BenefitsSection = () => {
-  const benefits = [{
-    icon: <Hand strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Easiest",
-    subtitle: "Usability"
-  }, {
-    icon: <RefreshCw strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Periodic",
-    subtitle: "Updates"
-  }, {
-    icon: <Shield strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "More",
-    subtitle: "Security"
-  }, {
-    icon: <Settings strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Regular",
-    subtitle: "Maintainance"
-  }, {
-    icon: <Key strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Access Anytime",
-    subtitle: "Anywhere"
-  }, {
-    icon: <Headphones strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Constant Technical",
-    subtitle: "Support"
-  }, {
-    icon: <DollarSign strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "No Huge Upfront",
-    subtitle: "Investment"
-  }, {
-    icon: <RefreshCw strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Better",
-    subtitle: "ROI"
-  }, {
-    icon: <CloudUpload strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "99.99%",
-    subtitle: "Uptime"
-  }, {
-    icon: <Smile strokeWidth={1.5} />,
-    accentColor: "#FF6634",
-    title: "Best User",
-    subtitle: "Experience"
-  }];
-  const DualColorIcon = ({
-    icon,
-    accentColor
-  }) => {
-    return <div className="relative w-12 h-12 flex items-center justify-center">
-        <div className="absolute inset-0 flex items-center justify-center">
-          {React.cloneElement(icon, {
-          className: "w-10 h-10",
-          stroke: "#0F172A"
-        })}
-        </div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          {React.cloneElement(icon, {
-          className: "w-6 h-6",
-          stroke: accentColor
-        })}
-        </div>
-      </div>;
-  };
-  return <section className="py-16 bg-[#f4efe9]">
+  return (
+    <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <Badge className="bg-[#ffdfd3] text-[#FF6634] hover:bg-[#ffdfd3]/90 px-6 py-2 rounded-full mb-6 font-normal">
-            The Best <span className="font-bold italic">F&B Point-of-Sale System</span>
-          </Badge>
-          <h2 className="text-4xl md:text-4xl font-bold mb-4">
-            How <span className="font-bold">SuperPOS</span> Enables
-            <br />
-            Your Success?
+          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
+            <span className="w-2 h-2 rounded-full bg-primary"></span>
+            <span><span className="font-bold italic">SuperPOS</span> Helps</span>
+          </div>
+          <h2 className="text-4xl font-bold mb-4">
+            How <span className="font-bold italic">SuperPOS</span> Enables<br />Your Success?
           </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            We offer a comprehensive suite of tools and features designed to empower your business and drive success in today's competitive market.
+          </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {benefits.map((benefit, index) => <Card key={index} className="overflow-hidden border-0 rounded-3xl shadow-sm">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <div className="mb-4">
-                  <DualColorIcon icon={benefit.icon} accentColor={benefit.accentColor} />
-                </div>
-                <div className="text-base text-gray-800">{benefit.title} {benefit.subtitle}</div>
-              </CardContent>
-            </Card>)}
+        {/* Benefits Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Benefit Card 1 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <CheckCircle className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Seamless Online Ordering</h3>
+            <p className="text-gray-600 text-center">
+              Enable customers to easily place orders online, enhancing convenience and expanding your reach.
+            </p>
+          </div>
+
+          {/* Benefit Card 2 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <Store className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Efficient Store Management</h3>
+            <p className="text-gray-600 text-center">
+              Streamline your store operations with intuitive tools for inventory, menu management, and more.
+            </p>
+          </div>
+
+          {/* Benefit Card 3 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <ShoppingBag className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Delivery Management</h3>
+            <p className="text-gray-600 text-center">
+              Optimize your delivery process with real-time tracking, driver management, and route optimization.
+            </p>
+          </div>
+
+          {/* Benefit Card 4 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <CreditCard className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Secure Payment Processing</h3>
+            <p className="text-gray-600 text-center">
+              Ensure secure and reliable payment processing for online and in-store transactions.
+            </p>
+          </div>
+
+          {/* Benefit Card 5 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <ShieldCheck className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Data-Driven Insights</h3>
+            <p className="text-gray-600 text-center">
+              Gain valuable insights into your business performance with comprehensive analytics and reporting tools.
+            </p>
+          </div>
+
+          {/* Benefit Card 6 */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-4">
+              <CheckCircle className="w-8 h-8" />
+            </div>
+            <h3 className="text-xl font-bold mb-2">Customer Loyalty Programs</h3>
+            <p className="text-gray-600 text-center">
+              Implement loyalty programs to reward your best customers and encourage repeat business.
+            </p>
+          </div>
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <Button className="bg-[#FF6634] hover:bg-[#FF6634]/90 text-white px-8">
+            Explore All Features
+          </Button>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default BenefitsSection;

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Rocket, Cloud, Link, Truck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -38,7 +37,7 @@ const WhomWeHelpSection = () => {
         <div className="text-center mb-12">
           <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
             <span className="w-2 h-2 rounded-full bg-primary"></span>
-            Who is This For?
+            Who is This For
           </div>
           <h2 className="text-4xl font-bold mb-4">Whom we help</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Calendar, Flag, Store, Users } from 'lucide-react';
+
 const StatsSection = () => {
-  return <section className="py-16 bg-[#f4efe9]">
+  return (
+    <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
@@ -44,6 +46,8 @@ const StatsSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default StatsSection;
