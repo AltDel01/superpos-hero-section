@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
@@ -45,10 +44,10 @@ const FeaturesSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-block py-[6px]">
+          <div className="bg-[#ffe8dc] text-[#ff704d] px-4 rounded-full text-sm mb-6 font-bold inline-block py-[6px]">
             Explore Features
           </div>
-          <h2 className="text-4xl font-bold mb-10">
+          <h2 className="text-4xl font-bold mb-10 text-[#1a1f2c]">
             Everything You Need To Run
             <br />
             Your Business
@@ -56,9 +55,19 @@ const FeaturesSection = () => {
 
           {/* Features Toggle Group */}
           <ToggleGroup type="single" className="justify-center gap-2 flex-wrap" defaultValue="Ordering Suite" value={activeFeature} onValueChange={handleValueChange}>
-            {features.map(feature => <ToggleGroupItem key={feature.label} value={feature.label} className={`rounded-full px-6 py-2 text-sm ${activeFeature === feature.label ? 'bg-[#F97316] text-white hover:bg-[#F97316]/90' : 'bg-[#FDE1D3] text-[#F97316] hover:bg-[#FDE1D3]/90'}`}>
+            {features.map(feature => (
+              <ToggleGroupItem 
+                key={feature.label} 
+                value={feature.label} 
+                className={`rounded-full px-6 py-2 text-sm ${
+                  activeFeature === feature.label 
+                    ? 'bg-[#ff704d] text-white hover:bg-[#ff704d]/90' 
+                    : 'bg-[#ffe8dc] text-[#ff704d] hover:bg-[#ffe8dc]/90'
+                }`}
+              >
                 {feature.label}
-              </ToggleGroupItem>)}
+              </ToggleGroupItem>
+            ))}
           </ToggleGroup>
         </div>
 
@@ -76,24 +85,30 @@ const FeaturesSection = () => {
 
               {/* Features List */}
               <div className="space-y-3">
-                {orderingFeatures.map(feature => <div key={feature.label} className="inline-flex items-center bg-[#FDE1D3] rounded-full px-4 py-2 mr-2 mb-2">
-                    <feature.icon className="w-4 h-4 mr-2 text-[#F97316]" />
-                    <span className="text-sm text-[#F97316]">{feature.label}</span>
-                  </div>)}
+                {orderingFeatures.map(feature => (
+                  <div 
+                    key={feature.label} 
+                    className="inline-flex items-center bg-[#ffe8dc] rounded-full px-4 py-2 mr-2 mb-2"
+                  >
+                    <feature.icon className="w-4 h-4 mr-2 text-[#ff704d]" />
+                    <span className="text-sm text-[#ff704d]">{feature.label}</span>
+                  </div>
+                ))}
               </div>
 
-              <Button variant="default" className="bg-[#F97316] hover:bg-[#F97316]/90 text-white">
+              <Button variant="default" className="bg-[#ff704d] hover:bg-[#ff704d]/90 text-white">
                 Learn More
               </Button>
             </CardContent>
           </Card>
 
           {/* Right Column - Image */}
-          <div className="bg-[#FDE1D3] rounded-lg p-4 aspect-square">
+          <div className="bg-[#ffe8dc] rounded-lg p-4 aspect-square">
             <img src="/lovable-uploads/c9cb59bc-4dcd-4d68-92ba-e98a951c9e25.png" alt="Features Dashboard" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
       </div>
     </section>;
 };
+
 export default FeaturesSection;
