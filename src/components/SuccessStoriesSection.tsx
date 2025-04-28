@@ -1,13 +1,12 @@
-
 import React from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-
 const SuccessStoriesSection = () => {
   const stories = [{
     title: "UPH Canteen (Kawaraci)",
     description: "UPH Canteen serves as the leading healthy catering for retail and events. Providing a comprehensive platform for customers to order a wide array of food products, utilities, groceries, and everyday essentials from their preferred stores and restaurants, UPH Canteen ensures swift and hassle-free deliveries.",
-    image: "/lovable-uploads/c128d050-32e6-4c8c-835a-6a6da20dc557.png", // Updated image
+    image: "/lovable-uploads/c128d050-32e6-4c8c-835a-6a6da20dc557.png",
+    // Updated image
     logo: "/lovable-uploads/87d92d85-c1fb-43d4-b56c-4308abb7ca26.png"
   }, {
     title: "Go Food Court (Bekasi)",
@@ -15,11 +14,10 @@ const SuccessStoriesSection = () => {
     image: "/lovable-uploads/56c9cf2e-4d00-4897-9233-494aac9ba45e.png",
     logo: "/lovable-uploads/773017b7-cd5a-4380-9314-bc4c6f85d342.png"
   }];
-  
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <Badge className="bg-[#ffdfd3] text-[#FF6634] hover:bg-[#ffdfd3]/90 px-6 py-2 rounded-full mb-6">
+          <Badge className="bg-[#ffe8dc] text-[#ff704d] px-4 rounded-full text-sm mb-6 font-bold inline-block py-[6px]">
             Success Stories
           </Badge>
           <h2 className="text-4xl font-bold mb-4">
@@ -51,5 +49,4 @@ const SuccessStoriesSection = () => {
       </div>
     </section>;
 };
-
 export default SuccessStoriesSection;
