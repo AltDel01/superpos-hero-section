@@ -6,7 +6,7 @@ const Footer = () => {
         {/* Logo and Description */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
-            <img src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" alt="SuperPOS" className="h-35 mb-0" />
+            <img src="/lovable-uploads/94201b22-772f-44e8-b478-d943f8168ed7.png" alt="SuperPOS" className="h-35 mb--20" />
             <p className="text-black text-sm">
               <span className="font-bold italic">SuperPOS</span> offers a Complete Online POS System for Food, Groceries, Meat, Milk, Snack, and more.
             </p>
