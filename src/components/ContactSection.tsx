@@ -3,20 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { User, Mail, Phone, MessageSquare } from "lucide-react";
-
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
   };
-
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle newsletter subscription logic here
   };
-
-  return (
-    <section className="py-16 bg-[#f4efe9]">
+  return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
@@ -38,47 +34,28 @@ const ContactSection = () => {
                   <div className="absolute left-3 top-3 text-gray-400">
                     <User className="h-5 w-5" />
                   </div>
-                  <Input
-                    type="text"
-                    placeholder="Your Name"
-                    className="pl-10"
-                    required
-                  />
+                  <Input type="text" placeholder="Your Name" className="pl-10" required />
                 </div>
 
                 <div className="relative">
                   <div className="absolute left-3 top-3 text-gray-400">
                     <Mail className="h-5 w-5" />
                   </div>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    className="pl-10"
-                    required
-                  />
+                  <Input type="email" placeholder="Your Email" className="pl-10" required />
                 </div>
 
                 <div className="relative">
                   <div className="absolute left-3 top-3 text-gray-400">
                     <Phone className="h-5 w-5" />
                   </div>
-                  <Input
-                    type="tel"
-                    placeholder="Your Phone"
-                    className="pl-10"
-                    required
-                  />
+                  <Input type="tel" placeholder="Your Phone" className="pl-10" required />
                 </div>
 
                 <div className="relative">
                   <div className="absolute left-3 top-3 text-gray-400">
                     <MessageSquare className="h-5 w-5" />
                   </div>
-                  <Textarea
-                    placeholder="Your Message"
-                    className="pl-10 min-h-[120px]"
-                    required
-                  />
+                  <Textarea placeholder="Your Message" className="pl-10 min-h-[120px]" required />
                 </div>
               </div>
 
@@ -91,7 +68,7 @@ const ContactSection = () => {
           {/* Newsletter Subscription */}
           <div className="flex flex-col justify-center">
             <div className="mb-8">
-              <h3 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+              <h3 className="font-bold mb-4 text-lg">Subscribe to Our Newsletter</h3>
               <p className="text-gray-600">
                 Stay updated with our latest features and releases
               </p>
@@ -102,12 +79,7 @@ const ContactSection = () => {
                 <div className="absolute left-3 top-3 text-gray-400">
                   <Mail className="h-5 w-5" />
                 </div>
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="pl-10"
-                  required
-                />
+                <Input type="email" placeholder="Enter your email" className="pl-10" required />
               </div>
               <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
                 Subscribe →
@@ -116,8 +88,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
