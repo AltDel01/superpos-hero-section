@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Utensils, ShoppingBasket, Pizza, Beef, Wine, Stethoscope } from 'lucide-react';
 
@@ -66,7 +67,7 @@ const DeliveryOptionsSection = () => {
                   alt={option.title}
                   className="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/50 to-transparent opacity-60"></div>
               </div>
             </div>
           ))}
