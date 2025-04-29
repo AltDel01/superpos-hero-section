@@ -35,7 +35,7 @@ const RatingsSection = () => {
               <img 
                 src={platform.logo} 
                 alt="Platform logo" 
-                className={`${platform.isCapterra ? 'h-20' : 'h-12'} mb-8 object-contain`} 
+                className={platform.isCapterra ? 'h-20 mb-8 object-contain' : 'h-12 mb-8 object-contain'} 
               />
               <div className="flex items-center gap-2">
                 {[...Array(5)].map((_, i) => (
