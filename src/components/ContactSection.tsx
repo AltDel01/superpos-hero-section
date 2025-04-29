@@ -32,6 +32,8 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div>
             <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 shadow-lg space-y-6">
+              <h3 className="text-xl font-semibold mb-4">Submit POS Inquiry</h3>
+              
               <div className="space-y-4">
                 <div className="relative">
                   <div className="absolute left-3 top-3 text-gray-400">
