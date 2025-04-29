@@ -74,43 +74,43 @@ const ContactSection = () => {
           {/* Contact Information & Newsletter */}
           <div className="flex flex-col justify-between">
             {/* Contact Information */}
-            <div className="mb-8">
-              <div className="space-y-4">
-                <Card className="p-4 flex items-center space-x-4">
-                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
-                    <Phone className="h-5 w-5 text-[#FF6634]" />
-                  </div>
-                  <div>
-                    <p className="text-gray-700 font-medium">0811 919 9898</p>
-                  </div>
-                </Card>
-                
-                <Card className="p-4 flex items-center space-x-4">
-                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
-                    <Mail className="h-5 w-5 text-[#FF6634]" />
-                  </div>
-                  <div>
-                    <p className="text-gray-700 font-medium">hello@superpos.com</p>
-                  </div>
-                </Card>
-                
-                <Card className="p-4 flex items-center space-x-4">
-                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
-                    <MapPin className="h-5 w-5 text-[#FF6634]" />
-                  </div>
-                  <div>
-                    <p className="text-gray-700 font-medium">Karawaci, Tangerang</p>
-                  </div>
-                </Card>
-              </div>
+            <div className="space-y-4">
+              <Card className="p-3 flex items-center space-x-4 shadow-sm">
+                <div className="bg-[#FFECE6] p-3 rounded-full">
+                  <Phone className="h-5 w-5 text-[#FF6634]" />
+                </div>
+                <div>
+                  <p className="text-gray-700 font-medium">0811 919 9898</p>
+                </div>
+              </Card>
+              
+              <Card className="p-3 flex items-center space-x-4 shadow-sm">
+                <div className="bg-[#FFECE6] p-3 rounded-full">
+                  <Mail className="h-5 w-5 text-[#FF6634]" />
+                </div>
+                <div>
+                  <p className="text-gray-700 font-medium">hello@superpos.com</p>
+                </div>
+              </Card>
+              
+              <Card className="p-3 flex items-center space-x-4 shadow-sm">
+                <div className="bg-[#FFECE6] p-3 rounded-full">
+                  <MapPin className="h-5 w-5 text-[#FF6634]" />
+                </div>
+                <div>
+                  <p className="text-gray-700 font-medium">Karawaci, Tangerang</p>
+                </div>
+              </Card>
             </div>
             
             {/* Newsletter Subscription - Moved to bottom */}
             <div className="mt-auto">
-              <h3 className="font-bold mb-4 text-lg">Subscribe to Our Newsletter</h3>
-              <p className="text-gray-600 mb-4">
-                Stay updated with our latest features and releases
-              </p>
+              <div className="mb-4 mt-8">
+                <h3 className="font-bold mb-2 text-lg">Subscribe to Our Newsletter</h3>
+                <p className="text-gray-600">
+                  Stay updated with our latest features and releases
+                </p>
+              </div>
               
               <form onSubmit={handleSubscribe} className="space-y-4">
                 <div className="relative">
