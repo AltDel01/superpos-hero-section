@@ -4,17 +4,14 @@ import { Button } from "@/components/ui/button";
 
 const RatingsSection = () => {
   const ratings = [{
-    logo: "/lovable-uploads/835cfeaf-8e3d-402c-b9ed-e8534bc2f771.png", // Capterra logo
-    rating: 5.0,
-    isCapterra: true // Flag to identify Capterra for special styling
+    logo: "/lovable-uploads/835cfeaf-8e3d-402c-b9ed-e8534bc2f771.png",
+    rating: 5.0
   }, {
     logo: "/lovable-uploads/aa4ff6b4-cbbe-4c2d-bd07-6228435e53cc.png",
-    rating: 5.0,
-    isCapterra: false
+    rating: 5.0
   }, {
     logo: "/lovable-uploads/745a76f5-d04a-4e4d-997c-555661a0bb75.png",
-    rating: 5.0,
-    isCapterra: false
+    rating: 5.0
   }];
 
   return (
@@ -32,11 +29,7 @@ const RatingsSection = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {ratings.map((platform, index) => (
             <div key={index} className="bg-white rounded-3xl p-8 flex flex-col items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img 
-                src={platform.logo} 
-                alt="Platform logo" 
-                className={platform.isCapterra ? 'h-20 mb-8 object-contain' : 'h-12 mb-8 object-contain'} 
-              />
+              <img src={platform.logo} alt="Platform logo" className="h-12 mb-8 object-contain" />
               <div className="flex items-center gap-2">
                 {[...Array(5)].map((_, i) => (
                   <svg key={i} className="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
