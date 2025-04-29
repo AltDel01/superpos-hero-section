@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CheckCircle, Store, ShoppingBag, CreditCard, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,8 +8,7 @@ const BenefitsSection = () => {
     <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
-            <span className="w-2 h-2 rounded-full bg-primary"></span>
+          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-block py-[6px]">
             <span><span className="font-bold italic">SuperPOS</span> Helps</span>
           </div>
           <h2 className="text-4xl font-bold mb-4">

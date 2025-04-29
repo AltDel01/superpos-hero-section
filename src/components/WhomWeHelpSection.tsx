@@ -1,83 +1,147 @@
+
 import React from 'react';
-import { Rocket, Cloud, Link, Truck } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from "@/components/ui/card";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { ShoppingBag, Utensils, Beef, Pizza, Beer, Truck, Apple, Salad } from "lucide-react";
 
 const WhomWeHelpSection = () => {
-  const cards = [
-    {
-      icon: Rocket,
-      title: "F&B Outlet",
-      description: "Starting your journey with the passion of cooking? Put your foot strong with our White-label F&B App Solution that offers a complete suite of advanced features to succeed.",
-      image: "/lovable-uploads/f240742f-5418-4601-8f42-813388944374.png"
-    },
-    {
-      icon: Link,
-      title: "Chain Restaurants",
-      description: "Want to simplify operational workflows of your restaurant chains? Our readymade Food delivery solution automates food orders & deliveries to simplify business management.",
-      image: "/lovable-uploads/64547245-f55f-4164-a778-dae63f7e0578.png"
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Kitchens",
-      description: "Want a platform for your dark kitchen to connect with your customers? Count on your readymade white-label restaurant delivery solution and flaunt your delicious meals online.",
-      image: "/lovable-uploads/933cb5f3-fe08-454f-84f9-26ab2cee512b.png"
-    },
-    {
-      icon: Truck,
-      title: "Food Delivery",
-      description: "We empower food delivery companies to streamline operations, enhance efficiency, and exceed customer expectations in today's fast-paced digital landscape.",
-      image: "/lovable-uploads/ae5be8de-9f22-4bba-bdbc-cc5f6bfb2830.png"
-    }
-  ];
-
-  return (
-    <section className="py-16 bg-[#f4efe9]">
+  return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-12">
-          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-flex items-center gap-2 py-[6px]">
-            <span className="w-2 h-2 rounded-full bg-primary"></span>
-            Who is This For
+          <div className="bg-primary/10 text-primary px-4 rounded-full text-sm mb-6 font-bold inline-block py-[6px]">
+            Who is This For?
           </div>
-          <h2 className="text-4xl font-bold mb-4">Whom we help</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Whether you own a multinational restaurant chain or running a small pizzeria,{' '}
-            <span className="font-medium italic">SuperPOS</span> can turn your business online within minutes; no fuss or delay.
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="font-bold italic">SuperPOS</span> is Made<br />Exclusively For You!
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto">
+            Whether you're a restaurant owner, grocery store, or any food business looking to optimize operations and increase your online presence - <span className="font-bold italic">SuperPOS</span> has got you covered.
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {cards.map((card, index) => (
-            <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg flex">
-              <div className="p-8 flex-1">
-                <card.icon className="w-12 h-12 text-primary mb-4" />
-                <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-                <p className="text-gray-600">{card.description}</p>
-              </div>
-              <div className="w-[200px] bg-gray-100">
-                <img 
-                  src={card.image} 
-                  alt={card.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          ))}
+        {/* Filter Categories */}
+        <div className="mb-10 flex justify-center">
+          <ToggleGroup type="single" defaultValue="restaurant" className="bg-white rounded-full p-1 shadow-md">
+            <ToggleGroupItem value="restaurant" className="rounded-full data-[state=on]:bg-[#FDE1D3] data-[state=on]:text-[#FF6634]">
+              <Utensils className="mr-2 h-4 w-4" /> Restaurant
+            </ToggleGroupItem>
+            <ToggleGroupItem value="grocery" className="rounded-full data-[state=on]:bg-[#FDE1D3] data-[state=on]:text-[#FF6634]">
+              <ShoppingBag className="mr-2 h-4 w-4" /> Grocery
+            </ToggleGroupItem>
+            <ToggleGroupItem value="meat" className="rounded-full data-[state=on]:bg-[#FDE1D3] data-[state=on]:text-[#FF6634]">
+              <Beef className="mr-2 h-4 w-4" /> Meat Shop
+            </ToggleGroupItem>
+          </ToggleGroup>
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex justify-center gap-4">
-          <Button className="bg-[#F97316] hover:bg-[#F97316]/90 text-white px-8">
-            Get Started
-          </Button>
-          <Button variant="outline" className="border-[#F97316] text-[#F97316] hover:bg-[#F97316]/10">
-            Pricing
-          </Button>
+        {/* Business Types Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Card 1 - Restaurants */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Utensils className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Restaurants</h3>
+              <p className="text-gray-600 text-sm">
+                Perfect for dine-in restaurants looking to expand with delivery and takeaway options
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 2 - Pizza Shops */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Pizza className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Pizza Shops</h3>
+              <p className="text-gray-600 text-sm">
+                Specialized tools for pizza delivery tracking and order management
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 3 - Liquor Stores */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Beer className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Liquor Stores</h3>
+              <p className="text-gray-600 text-sm">
+                Age verification, inventory management, and safe delivery options
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 4 - Grocery Stores */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <ShoppingBag className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Grocery Stores</h3>
+              <p className="text-gray-600 text-sm">
+                Manage extensive inventories and provide convenient delivery scheduling
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 5 - Meat Shops */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Beef className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Meat Shops</h3>
+              <p className="text-gray-600 text-sm">
+                Special features for fresh product handling and temperature-controlled delivery
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 6 - Courier Services */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Truck className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Courier Services</h3>
+              <p className="text-gray-600 text-sm">
+                Route optimization and real-time tracking for efficient package delivery
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 7 - Fruit Stores */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Apple className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Fruit Stores</h3>
+              <p className="text-gray-600 text-sm">
+                Seasonal inventory management and freshness tracking for produce
+              </p>
+            </CardContent>
+          </Card>
+
+          {/* Card 8 - Healthy Food */}
+          <Card className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-shadow border-0 shadow">
+            <CardContent className="p-6 flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-[#FDE1D3] rounded-full flex items-center justify-center mb-4">
+                <Salad className="h-8 w-8 text-[#FF6634]" />
+              </div>
+              <h3 className="font-bold text-xl mb-2">Healthy Food</h3>
+              <p className="text-gray-600 text-sm">
+                Nutritional information display and specialized prep instructions
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 export default WhomWeHelpSection;
