@@ -1,18 +1,22 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { User, Mail, Phone, MessageSquare, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
+
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic here
   };
+  
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle newsletter subscription logic here
   };
+  
   return <section className="py-16 bg-[#f4efe9]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
@@ -102,7 +106,7 @@ const ContactSection = () => {
             {/* Newsletter Subscription - Moved to bottom */}
             <div className="mt-auto">
               <div className="mb-4 mt-8">
-                <h3 className="mb-2 text-lg font-semibold">Subscribe to Our Newsletter</h3>
+                <h3 className="font-bold mb-2 text-lg">Subscribe to Our Newsletter</h3>
                 <p className="text-gray-600">
                   Stay updated with our latest features and releases
                 </p>
@@ -125,4 +129,5 @@ const ContactSection = () => {
       </div>
     </section>;
 };
+
 export default ContactSection;
