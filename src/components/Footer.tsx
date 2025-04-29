@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-1">
             <div className="mb-4">
-              <img src="/lovable-uploads/b0a5d0cf-b0d4-439a-9b08-8cb6ac639595.png" alt="SuperPOS" className="h-8" />
+              <img src="/lovable-uploads/b0a5d0cf-b0d4-439a-9b08-8cb6ac639595.png" alt="SuperPOS" className="h-12" />
             </div>
             <p className="text-black text-sm">
               <span className="font-bold italic">SuperPOS</span> offers a Complete Online POS System for Food, Groceries, Meat, Milk, Snack, and more.
@@ -69,7 +70,7 @@ const Footer = () => {
         </div>
 
         {/* Usecases */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h5 className="font-bold mb-3 text-black">Usecases:</h5>
           <div className="flex flex-wrap gap-2 text-sm text-black">
             <span>→ Food Delivery</span>
@@ -86,8 +87,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row justify-between items-center py-8 border-t border-black/20">
-          <div className="flex gap-4 mb-4 md:mb-0">
+        <div className="flex flex-col md:flex-row justify-between items-center py-4 border-t border-black/20">
+          <div className="flex gap-4 mb-2 md:mb-0">
             <a href="#" className="text-sm text-black hover:text-[#FF6634]">Terms of Service</a>
             <a href="#" className="text-sm text-black hover:text-[#FF6634]">Privacy Policy</a>
           </div>
