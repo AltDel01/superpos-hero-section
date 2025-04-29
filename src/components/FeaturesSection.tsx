@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
@@ -59,10 +60,11 @@ const FeaturesSection = () => {
               <ToggleGroupItem 
                 key={feature.label} 
                 value={feature.label} 
+                variant="orange"
                 className={`rounded-full px-6 py-2 text-sm ${
                   activeFeature === feature.label 
-                    ? 'bg-[#ff704d] text-white hover:bg-[#ff704d]/90' 
-                    : 'bg-[#ffe8dc] text-[#ff704d] hover:bg-[#ffe8dc]/90'
+                    ? 'bg-[#FF6634] text-white hover:bg-[#FF6634]/90' 
+                    : 'bg-[#ffe8dc] text-[#FF6634] hover:bg-[#ffe8dc]/90'
                 }`}
               >
                 {feature.label}
