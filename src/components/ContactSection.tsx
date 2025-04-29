@@ -3,7 +3,8 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { User, Mail, Phone, MessageSquare } from "lucide-react";
+import { User, Mail, Phone, MessageSquare, MapPin } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -70,26 +71,59 @@ const ContactSection = () => {
             </form>
           </div>
 
-          {/* Newsletter Subscription */}
-          <div className="flex flex-col justify-center">
+          {/* Contact Information & Newsletter */}
+          <div className="flex flex-col justify-between">
+            {/* Contact Information */}
             <div className="mb-8">
-              <h3 className="font-bold mb-4 text-lg">Subscribe to Our Newsletter</h3>
-              <p className="text-gray-600">
-                Stay updated with our latest features and releases
-              </p>
+              <div className="space-y-4">
+                <Card className="p-4 flex items-center space-x-4">
+                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
+                    <Phone className="h-5 w-5 text-[#FF6634]" />
+                  </div>
+                  <div>
+                    <p className="text-gray-700 font-medium">0811 919 9898</p>
+                  </div>
+                </Card>
+                
+                <Card className="p-4 flex items-center space-x-4">
+                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
+                    <Mail className="h-5 w-5 text-[#FF6634]" />
+                  </div>
+                  <div>
+                    <p className="text-gray-700 font-medium">hello@superpos.com</p>
+                  </div>
+                </Card>
+                
+                <Card className="p-4 flex items-center space-x-4">
+                  <div className="bg-[#FF6634]/10 p-3 rounded-full">
+                    <MapPin className="h-5 w-5 text-[#FF6634]" />
+                  </div>
+                  <div>
+                    <p className="text-gray-700 font-medium">Karawaci, Tangerang</p>
+                  </div>
+                </Card>
+              </div>
             </div>
             
-            <form onSubmit={handleSubscribe} className="space-y-4">
-              <div className="relative">
-                <div className="absolute left-3 top-3 text-gray-400">
-                  <Mail className="h-5 w-5" />
+            {/* Newsletter Subscription - Moved to bottom */}
+            <div className="mt-auto">
+              <h3 className="font-bold mb-4 text-lg">Subscribe to Our Newsletter</h3>
+              <p className="text-gray-600 mb-4">
+                Stay updated with our latest features and releases
+              </p>
+              
+              <form onSubmit={handleSubscribe} className="space-y-4">
+                <div className="relative">
+                  <div className="absolute left-3 top-3 text-gray-400">
+                    <Mail className="h-5 w-5" />
+                  </div>
+                  <Input type="email" placeholder="Enter your email" className="pl-10" required />
                 </div>
-                <Input type="email" placeholder="Enter your email" className="pl-10" required />
-              </div>
-              <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
-                Subscribe →
-              </Button>
-            </form>
+                <Button className="w-full bg-[#FF6634] hover:bg-[#FF6634]/90 text-white">
+                  Subscribe →
+                </Button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
